@@ -1,2 +1,0 @@
-# polluxlee.github.io
-blog
