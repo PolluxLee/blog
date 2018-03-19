@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>pollux</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-19T13:36:44.971Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>polluxlee</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实用 object-fit</title>
+    <link href="http://yoursite.com/2018/03/18/CSS-object-fit/"/>
+    <id>http://yoursite.com/2018/03/18/CSS-object-fit/</id>
+    <published>2018-03-17T16:00:00.000Z</published>
+    <updated>2018-03-19T13:36:44.971Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Definition&quot;&gt;&lt;a href=&quot;#Definition&quot; class=&quot;headerlink&quot; title=&quot;Definition&quot;&gt;&lt;/a&gt;Definition&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;The
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 原型链</title>
+    <link href="http://yoursite.com/2018/03/07/The-Prototype-Chain/"/>
+    <id>http://yoursite.com/2018/03/07/The-Prototype-Chain/</id>
+    <published>2018-03-06T16:00:00.000Z</published>
+    <updated>2018-03-07T06:38:48.281Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Prototype-属性&quot;&gt;&lt;a href=&quot;#Prototype-属性&quot; class=&quot;headerlink&quot; title=&quot;[[Prototype]] 属性&quot;&gt;&lt;/a&gt;[[Prototype]] 属性&lt;/h2&gt;&lt;p&gt;JavaScript 对象都有一个私有属性
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 数据类型和数据结构</title>
+    <link href="http://yoursite.com/2018/03/07/JavaScript-Data-Types/"/>
+    <id>http://yoursite.com/2018/03/07/JavaScript-Data-Types/</id>
+    <published>2018-03-06T16:00:00.000Z</published>
+    <updated>2018-03-07T01:48:34.471Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;动态性&quot;&gt;&lt;a href=&quot;#动态性&quot; class=&quot;headerlink&quot; title=&quot;动态性&quot;&gt;&lt;/a&gt;动态性&lt;/h2&gt;&lt;p&gt;JavaScript
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS Box Model</title>
+    <link href="http://yoursite.com/2018/03/01/CSS-Box-Model/"/>
+    <id>http://yoursite.com/2018/03/01/CSS-Box-Model/</id>
+    <published>2018-02-28T16:00:00.000Z</published>
+    <updated>2018-03-01T10:31:08.546Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;IE-盒模型与-W3C-盒模型&quot;&gt;&lt;a href=&quot;#IE-盒模型与-W3C-盒模型&quot; class=&quot;headerlink&quot; title=&quot;IE 盒模型与 W3C 盒模型&quot;&gt;&lt;/a&gt;IE 盒模型与 W3C 盒模型&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Angular2 自定义双向绑定</title>
+    <link href="http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/"/>
+    <id>http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/</id>
+    <published>2018-01-25T16:00:00.000Z</published>
+    <updated>2018-01-26T03:58:57.062Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值&lt;br&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>和弦初探</title>
+    <link href="http://yoursite.com/2018/01/26/Chord/"/>
+    <id>http://yoursite.com/2018/01/26/Chord/</id>
+    <published>2018-01-25T16:00:00.000Z</published>
+    <updated>2018-01-26T03:50:24.538Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;&lt;code&gt;下面均以根音 C 的和弦为例&lt;/code&gt;&lt;br&gt;如果还没弄清楚音程的概念，请看我之前的文章 ===&amp;gt;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>代码回滚：Reset、Checkout、Revert</title>
+    <link href="http://yoursite.com/2018/01/26/Code-Rollback/"/>
+    <id>http://yoursite.com/2018/01/26/Code-Rollback/</id>
+    <published>2018-01-25T16:00:00.000Z</published>
+    <updated>2018-01-26T12:25:59.683Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Git-仓库组成&quot;&gt;&lt;a href=&quot;#Git-仓库组成&quot; class=&quot;headerlink&quot; title=&quot;Git 仓库组成&quot;&gt;&lt;/a&gt;Git 仓库组成&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Angular2 父子组件的通信</title>
+    <link href="http://yoursite.com/2017/08/18/Angular2-Input-Output/"/>
+    <id>http://yoursite.com/2017/08/18/Angular2-Input-Output/</id>
+    <published>2017-08-17T16:00:00.000Z</published>
+    <updated>2017-08-18T12:25:33.249Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;父组件向子组件传入数据-–-Input&quot;&gt;&lt;a href=&quot;#父组件向子组件传入数据-–-Input&quot; class=&quot;headerlink&quot; title=&quot;父组件向子组件传入数据 – @Input&quot;&gt;&lt;/a&gt;父组件向子组件传入数据 –
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 的 this 的用法</title>
+    <link href="http://yoursite.com/2017/08/05/JavaScript-this/"/>
+    <id>http://yoursite.com/2017/08/05/JavaScript-this/</id>
+    <published>2017-08-04T16:00:00.000Z</published>
+    <updated>2017-08-05T03:48:16.417Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;函数调用&quot;&gt;&lt;a href=&quot;#函数调用&quot; class=&quot;headerlink&quot; title=&quot;函数调用&quot;&gt;&lt;/a&gt;函数调用&lt;/h2&gt;&lt;p&gt;&lt;code&gt;this&lt;/code&gt; 是 Javascript
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>五度圈与大小调</title>
+    <link href="http://yoursite.com/2017/08/02/Five-Degree-Cycle/"/>
+    <id>http://yoursite.com/2017/08/02/Five-Degree-Cycle/</id>
+    <published>2017-08-01T16:00:00.000Z</published>
+    <updated>2017-08-02T05:53:58.666Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;视频教程&quot;&gt;&lt;a href=&quot;#视频教程&quot; class=&quot;headerlink&quot; title=&quot;视频教程&quot;&gt;&lt;/a&gt;视频教程&lt;/h2&gt;&lt;p&gt;利用全半关系计算自然大小调的音阶：&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>音程</title>
+    <link href="http://yoursite.com/2017/07/14/Pitch-Interval/"/>
+    <id>http://yoursite.com/2017/07/14/Pitch-Interval/</id>
+    <published>2017-07-13T16:00:00.000Z</published>
+    <updated>2017-07-17T02:32:45.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>音符与乐谱</title>
+    <link href="http://yoursite.com/2017/07/12/Learn-Staff/"/>
+    <id>http://yoursite.com/2017/07/12/Learn-Staff/</id>
+    <published>2017-07-11T16:00:00.000Z</published>
+    <updated>2017-07-14T16:15:29.369Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>选择一支吉他</title>
+    <link href="http://yoursite.com/2017/07/09/Choose-Guitar/"/>
+    <id>http://yoursite.com/2017/07/09/Choose-Guitar/</id>
+    <published>2017-07-08T16:00:00.000Z</published>
+    <updated>2017-07-09T11:53:43.133Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;吉他种类&quot;&gt;&lt;a href=&quot;#吉他种类&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Protobuf 配置</title>
+    <link href="http://yoursite.com/2017/04/25/Protobuf/"/>
+    <id>http://yoursite.com/2017/04/25/Protobuf/</id>
+    <published>2017-04-24T16:00:00.000Z</published>
+    <updated>2017-05-02T05:38:50.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Golang-在-Windows-环境下使用-Protobuf&quot;&gt;&lt;a href=&quot;#Golang-在-Windows-环境下使用-Protobuf&quot; class=&quot;headerlink&quot; title=&quot;Golang 在 Windows 环境下使用
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈十二平均律与吉他调式音阶</title>
+    <link href="http://yoursite.com/2017/04/06/Tone-Scale/"/>
+    <id>http://yoursite.com/2017/04/06/Tone-Scale/</id>
+    <published>2017-04-05T16:00:00.000Z</published>
+    <updated>2017-07-09T11:43:58.041Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

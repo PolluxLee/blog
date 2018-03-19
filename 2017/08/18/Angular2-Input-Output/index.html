@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular2 父子组件的通信 | polluxlee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-96493222-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2017/08/18/Angular2-Input-Output/">Angular2 父子组件的通信</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">August 18 2017</p>
+  </section>
+
+  <section class="article-entry">
+    <h2 id="父组件向子组件传入数据-–-Input"><a href="#父组件向子组件传入数据-–-Input" class="headerlink" title="父组件向子组件传入数据 – @Input"></a>父组件向子组件传入数据 – @Input</h2><p>一个组件的标签在另一个组件的内部，即包含这个标签的组件就是它的父组件，子组件的属性通过加上 <code>@Input()</code> 装饰器接收来自父组件的数据。</p>
+<p>child.component.ts<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;Component, EventEmitter, Input, Output&#125; <span class="keyword">from</span> <span class="string">"@angular/core"</span>;</span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: <span class="string">'app-child'</span>,</span><br><span class="line">  template: <span class="string">`&lt;div&gt;</span></span><br><span class="line"><span class="string">                ChildComponent: &lt;br&gt;</span></span><br><span class="line"><span class="string">                profess: &lt;input [(ngModel)]="profess"&gt;&lt;br&gt;</span></span><br><span class="line"><span class="string">                item.name: &lt;input [(ngModel)]="item.name"&gt;&lt;br&gt;</span></span><br><span class="line"><span class="string">                item.age:  &lt;input [(ngModel)]="item.age"&gt; &lt;br&gt;</span></span><br><span class="line"><span class="string">                &lt;button (click)="onClick()"&gt;Deny!&lt;/button&gt; &lt;br&gt;&lt;br&gt;</span></span><br><span class="line"><span class="string">              &lt;/div&gt;`</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">ChildComponent</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  @Input() profess: string;</span><br><span class="line"></span><br><span class="line">  @Input() item: any;</span><br><span class="line"></span><br><span class="line">  @Output() pollux = <span class="keyword">new</span> EventEmitter&lt;string&gt;();</span><br><span class="line"></span><br><span class="line">  onClick()&#123;</span><br><span class="line">    <span class="keyword">this</span>.pollux.emit(<span class="string">"But April doesn't like Pollux."</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>father.component.ts<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;Component&#125; <span class="keyword">from</span> <span class="string">"@angular/core"</span>;</span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: <span class="string">'app-father'</span>,</span><br><span class="line">  template: <span class="string">`&lt;div&gt;</span></span><br><span class="line"><span class="string">                FatherComponent: &lt;br&gt;</span></span><br><span class="line"><span class="string">                f_Profess: &#123;&#123;profess&#125;&#125; &lt;br&gt;</span></span><br><span class="line"><span class="string">                f_Item.name: &#123;&#123;fItem.name&#125;&#125; &lt;br&gt;</span></span><br><span class="line"><span class="string">                f_Item.age:  &#123;&#123;fItem.age&#125;&#125;  &lt;br&gt;</span></span><br><span class="line"><span class="string">              &lt;/div&gt; &lt;br&gt;</span></span><br><span class="line"><span class="string">              &lt;app-child [profess]="profess" [item]="fItem" (pollux)="onChange($event)"&gt;&lt;/app-child&gt;</span></span><br><span class="line"><span class="string">              &lt;p&gt;&#123;&#123;professRet&#125;&#125;&lt;/p&gt;</span></span><br><span class="line"><span class="string">  `</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">FatherComponent</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  profess: string = <span class="string">"Pollux loves April."</span>;</span><br><span class="line"></span><br><span class="line">  fItem = &#123;</span><br><span class="line">    name: <span class="string">"pollux"</span>,</span><br><span class="line">    age: <span class="number">20</span></span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  professRet: string;</span><br><span class="line"></span><br><span class="line">  onChange(event)&#123;</span><br><span class="line">    <span class="keyword">this</span>.professRet = event;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在父组件通过中括号 <code>[ ]</code> <strong>单向</strong>绑定属性 <code>f_Profess</code> 和 <code>fItem</code> 到子组件。子组件通过加上 <code>@Input</code> 装饰器接收来自父组件的数据。但是要注意的是，基本数据类型是单向绑定，引用类型的变量是双向的，<code>fItem</code> 属性就是引用类型，子组件 <code>item</code> 属性的改变，会影响到父组件，使用时需谨慎。下图，改变输入框的值，也就是改变子组件的 <code>item</code> 的值，父组件对应的值也随之改变，但基本数据类型 <code>f_Profess</code> 不会影响到父组件。</p>
+<p><img src="http://onvgd1z3p.bkt.clouddn.com/input.png" alt=""></p>
+<h2 id="子组件向父组件传出数据-–-Output"><a href="#子组件向父组件传出数据-–-Output" class="headerlink" title="子组件向父组件传出数据 – @Output"></a>子组件向父组件传出数据 – @Output</h2><p>在子标签添加一个事件 <code>(pollux)</code>，名字随意，然后在父组件下面写一个监听的函数 onChange(event)。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;app-child [profess]=<span class="string">"profess"</span> [item]=<span class="string">"fItem"</span> (pollux)=<span class="string">"onChange($event)"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">app-child</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>但这个监听是没有意义的，这个时候要在子组件用 <code>@Output</code> 标签来获得与父组件的联系。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Output() pollux = <span class="keyword">new</span> EventEmitter&lt;string&gt;();</span><br></pre></td></tr></table></figure></p>
+<p>这个时候只需要调用 EventEmitter 类的发射函数 emit() 就能把数据发送到父组件，父组件通过 onChange(event) 函数接收。</p>
+<p><img src="http://onvgd1z3p.bkt.clouddn.com/output.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://www.concretepage.com/angular-2/angular-2-input-and-output-example" target="_blank" rel="noopener">Angular 2 @Input and @Output Example</a><br><a href="http://liuwenzhuang.github.io/2016/03/11/angular2-component-data-binding-and-event.html" target="_blank" rel="noopener">Angular 2 父子组件数据通信</a></p>
+
+  </section>
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="http://onvgd1z3p.bkt.clouddn.com/pollux.jpg" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> polluxlee </p>
+      <p class="subtitle"> 若你喜欢怪人，其实我很美 </p>
+    <div>
+  </section>
+
+  
+</div>
+
+
+  
+</main>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>实用 object-fit | polluxlee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-96493222-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2018/03/18/CSS-object-fit/">实用 object-fit</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">March 18 2018</p>
+  </section>
+
+  <section class="article-entry">
+    <h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><blockquote>
+<p>The <strong><code>object-fit</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">CSS</a> property specifies how the contents of a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element" target="_blank" rel="noopener">replaced element</a>, such as an <code>img</code> or <code>video</code>, should be resized to fit its container.<br>You can alter the alignment of the replaced element’s content object within the element’s box using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position" title="The object-position CSS property determines the alignment of the selected element inside its box." target="_blank" rel="noopener"><code>object-position</code></a> property.</p>
+</blockquote>
+<p>CSS 属性 object-fit 指定可替换元素的内容该如何适应其容器，比如，可替换元素 <code>img</code> 的内容是 <code>src</code>，<code>object-fit</code> 就可以调整 <code>src</code> 以不同的方式适应 <code>img</code>。要明确一点是，<code>object-fit</code> 是调整替换元素的内容而非替换元素本身</p>
+<h2 id="Value"><a href="#Value" class="headerlink" title="Value"></a>Value</h2><ul>
+<li><code>contain</code>: 维持内容比例不变，拉伸内容直到内容的宽等于容器的宽，或内容的高等于容器的高</li>
+<li><code>cover</code>: 维持内容比例不变，拉伸内容直到内容和容器之间刚好没有空白</li>
+<li><code>fill</code>: 内容比例有可能改变，拉伸内容，使得内容的宽和高分别等于容器的宽和高</li>
+<li><code>none</code>: 维持内容比例不变，不做任何放缩，若有溢出部分则隐藏</li>
+<li><code>scale-down</code>: 选择 contain 和 none 较小的一个</li>
+</ul>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><iframe src="https://stackblitz.com/edit/object-fit?embed=0&file=app/app.component.html" style="width: 100%;height: 500px;"></iframe>
+
+
+<p><img src="https://upload-images.jianshu.io/upload_images/2351420-3d4777355e8cccc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><a href="https://stackblitz.com/edit/object-fit" target="_blank" rel="noopener">Code</a></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" target="_blank" rel="noopener">object-fit</a><br><a href="http://www.zhangxinxu.com/wordpress/2015/03/css3-object-position-object-fit/" target="_blank" rel="noopener">半深入理解CSS3 object-position/object-fit属性</a></p>
+
+  </section>
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="http://onvgd1z3p.bkt.clouddn.com/pollux.jpg" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> polluxlee </p>
+      <p class="subtitle"> 若你喜欢怪人，其实我很美 </p>
+    <div>
+  </section>
+
+  
+</div>
+
+
+  
+</main>
+
+</body>
+</html>

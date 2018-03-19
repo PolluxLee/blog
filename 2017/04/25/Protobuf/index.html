@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Protobuf 配置 | polluxlee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-96493222-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2017/04/25/Protobuf/">Protobuf 配置</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">April 25 2017</p>
+  </section>
+
+  <section class="article-entry">
+    <h2 id="Golang-在-Windows-环境下使用-Protobuf"><a href="#Golang-在-Windows-环境下使用-Protobuf" class="headerlink" title="Golang 在 Windows 环境下使用 Protobuf"></a>Golang 在 Windows 环境下使用 Protobuf</h2><h3 id="安装-protoc"><a href="#安装-protoc" class="headerlink" title="安装 protoc"></a>安装 protoc</h3><p>下载 protoc-3.1.0-win32.zip 或者其他版本的 win32： <a href="https://github.com/google/protobuf/releases" target="_blank" rel="noopener">https://github.com/google/protobuf/releases</a></p>
+<h3 id="安装-proto-插件"><a href="#安装-proto-插件" class="headerlink" title="安装 proto 插件"></a>安装 proto 插件</h3><p>参考 <a href="https://github.com/golang/protobuf" target="_blank" rel="noopener">https://github.com/golang/protobuf</a> 上面的 <code>Installation</code>。若未安装 Go ，先安装：<a href="https://golang.org/doc/install" target="_blank" rel="noopener">https://golang.org/doc/install </a>，然后安装 proto 如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取 goprotobuf 提供的 Protobuf 编译器插件 protoc-gen-go</span></span><br><span class="line"><span class="comment"># protoc-gen-go 被放置于 $GOPATH/bin 下</span></span><br><span class="line"><span class="comment"># $GOPATH/bin 应该被加入 PATH 环境变量，以便 protoc 能够找到 protoc-gen-go</span></span><br><span class="line"><span class="comment"># 此插件被 protoc 使用，用于编译 .proto 文件成为 .go 源文件，通过此源文件可以使用定义在 .proto 文件中的消息</span></span><br><span class="line"></span><br><span class="line">$ go get -u github.com/golang/protobuf/&#123;proto,protoc-gen-go&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="proto-exe"><a href="#proto-exe" class="headerlink" title="proto.exe"></a>proto.exe</h3><p>解压第一个步骤下载的 <strong>protoc-3.1.0-win32.zip</strong> ，在 bin 目录下找到 protoc.exe 复制粘贴到 $GOPATH\bin</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 验证安装是否成功</span><br><span class="line"></span><br><span class="line">$ protoc --version</span><br><span class="line"></span><br><span class="line">libprotoc 3.1.0</span><br></pre></td></tr></table></figure>
+<h3 id="使用-goprotobuf"><a href="#使用-goprotobuf" class="headerlink" title="使用 goprotobuf"></a>使用 goprotobuf</h3><blockquote>
+<p>这里通过一个例子来说明用法。先创建一个 .proto 文件 test.proto：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">package example;</span><br><span class="line"></span><br><span class="line">enum FOO &#123; X = 17; &#125;;</span><br><span class="line"></span><br><span class="line">message Test &#123;</span><br><span class="line">    required string label = 1;</span><br><span class="line">    optional int32 type = 2 [default=77];</span><br><span class="line">    repeated int64 reps = 3;</span><br><span class="line">    optional group OptionalGroup = 4 &#123;</span><br><span class="line">        required string RequiredField = 5;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在 ./ 目录下编译此 .proto 文件得到 test.pb.go：</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ protoc --go_out=. *.proto</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者（$SRC_DIR 是原目录，$DST_DIR 是目标目录）</span></span><br><span class="line"><span class="comment"># protoc -I=$SRC_DIR --go_out=$DST_DIR $SRC_DIR/test.proto</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在 main.go 中 import 后使用</p>
+</blockquote>
+<figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="comment">//	"fmt"</span></span><br><span class="line">	<span class="string">"log"</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// test.pb.go 的路径</span></span><br><span class="line">	<span class="string">"./example"</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// 辅助库</span></span><br><span class="line">	<span class="string">"github.com/golang/protobuf/proto"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line"></span><br><span class="line">	test := &amp;example.Test&#123;</span><br><span class="line">		Label: proto.String(<span class="string">"hello"</span>),</span><br><span class="line">		Type:  proto.Int32(<span class="number">17</span>),</span><br><span class="line">		<span class="comment">//		Reps:  []int64&#123;1, 2, 3&#125;,</span></span><br><span class="line">		Optionalgroup: &amp;example.Test_OptionalGroup&#123;</span><br><span class="line">			RequiredField: proto.String(<span class="string">"good bye"</span>),</span><br><span class="line">		&#125;,</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	data, err := proto.Marshal(test)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		log.Fatal(<span class="string">"marshaling error: "</span>, err)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	newTest := &amp;example.Test&#123;&#125;</span><br><span class="line"></span><br><span class="line">	err = proto.Unmarshal(data, newTest)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		log.Fatal(<span class="string">"unmarshaling error: "</span>, err)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// Now test and newTest contain the same data.</span></span><br><span class="line">	<span class="keyword">if</span> test.GetLabel() != newTest.GetLabel() &#123;</span><br><span class="line">		log.Fatalf(<span class="string">"data mismatch %q != %q"</span>, test.GetLabel(), newTest.GetLabel())</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// etc.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li>Protocol Buffers 官方网站：<a href="https://developers.google.com/protocol-buffers/docs/gotutorial" target="_blank" rel="noopener">https://developers.google.com/protocol-buffers/docs/gotutorial</a></li>
+<li>Go 语言中文网站：<a href="http://studygolang.com/articles/2540" target="_blank" rel="noopener">http://studygolang.com/articles/2540</a></li>
+</ul>
+<hr>
+<h2 id="在Android中使用Protocol-Buffers"><a href="#在Android中使用Protocol-Buffers" class="headerlink" title="在Android中使用Protocol Buffers"></a>在Android中使用Protocol Buffers</h2><blockquote>
+<p>在使用 Protocol Buffers 时，我们需要以特殊的方式定义我们的结构化数据，保存为 .proto 消息定义文件。 Protocol Buffers 项目为我们提供了编译器，可以将 .proto 文件编译为 Java 文件以用于我们的 Java 或 Android应用项目</p>
+</blockquote>
+<h3 id="安装-protoc-1"><a href="#安装-protoc-1" class="headerlink" title="安装 protoc"></a>安装 protoc</h3><p>下载 protoc-3.1.0-win32.zip 或者其他版本的 win32： <a href="https://github.com/google/protobuf/releases" target="_blank" rel="noopener">https://github.com/google/protobuf/releases</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 验证安装是否成功</span><br><span class="line"></span><br><span class="line">$ protoc --version</span><br><span class="line">libprotoc 3.1.0</span><br></pre></td></tr></table></figure>
+<h3 id="创建-proto-文件"><a href="#创建-proto-文件" class="headerlink" title="创建 .proto 文件"></a>创建 .proto 文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">package tutorial;</span><br><span class="line"></span><br><span class="line">option java_package = &quot;com.example.tutorial&quot;;</span><br><span class="line">option java_outer_classname = &quot;AddressBookProtos&quot;;</span><br><span class="line"></span><br><span class="line">message Person &#123;</span><br><span class="line">  required string name = 1;</span><br><span class="line">  required int32 id = 2;</span><br><span class="line">  optional string email = 3;</span><br><span class="line"></span><br><span class="line">  enum PhoneType &#123;</span><br><span class="line">    MOBILE = 0;</span><br><span class="line">    HOME = 1;</span><br><span class="line">    WORK = 2;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  message PhoneNumber &#123;</span><br><span class="line">    required string number = 1;</span><br><span class="line">    optional PhoneType type = 2 [default = HOME];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  repeated PhoneNumber phone = 4;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">message AddressBook &#123;</span><br><span class="line">  repeated Person person = 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="编译-photo-文件生成-java-文件"><a href="#编译-photo-文件生成-java-文件" class="headerlink" title="编译 .photo 文件生成 .java 文件"></a>编译 .photo 文件生成 .java 文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ protoc --java_out=. *.proto</span><br></pre></td></tr></table></figure>
+<h3 id="配置依赖"><a href="#配置依赖" class="headerlink" title="配置依赖"></a>配置依赖</h3><blockquote>
+<p>在 app 的 build.gradle 中添加对 protobuf-java 的依赖</p>
+</blockquote>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">    <span class="keyword">compile</span> <span class="keyword">fileTree</span>(dir: <span class="string">'libs'</span>, <span class="keyword">include</span>: [<span class="string">'*.jar'</span>])</span><br><span class="line">    testCompile <span class="string">'junit:junit:4.12'</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">compile</span> <span class="string">'com.android.support:appcompat-v7:23.4.0'</span></span><br><span class="line">    <span class="keyword">compile</span> <span class="string">'com.google.protobuf:protobuf-java:3.0.0'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="参考-1"><a href="#参考-1" class="headerlink" title="参考"></a>参考</h3><ul>
+<li>Protocol Buffers 官方网站：<a href="https://developers.google.com/protocol-buffers/docs/javatutorial" target="_blank" rel="noopener">https://developers.google.com/protocol-buffers/docs/javatutorial</a></li>
+<li>简书 hanpfei：<a href="http://www.jianshu.com/p/e8712962f0e9" target="_blank" rel="noopener">http://www.jianshu.com/p/e8712962f0e9</a></li>
+</ul>
+
+  </section>
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="http://onvgd1z3p.bkt.clouddn.com/pollux.jpg" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> polluxlee </p>
+      <p class="subtitle"> 若你喜欢怪人，其实我很美 </p>
+    <div>
+  </section>
+
+  
+</div>
+
+
+  
+</main>
+
+</body>
+</html>

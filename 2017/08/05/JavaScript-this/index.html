@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript 的 this 的用法 | polluxlee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-96493222-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2017/08/05/JavaScript-this/">JavaScript 的 this 的用法</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">August 05 2017</p>
+  </section>
+
+  <section class="article-entry">
+    <h2 id="函数调用"><a href="#函数调用" class="headerlink" title="函数调用"></a>函数调用</h2><p><code>this</code> 是 Javascript 语言的一个关键字。它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。随着函数使用场合的不同，this 的值会发生变化。但是有一个总的原则，那就是 this 指的是，调用函数的那个对象。就像下面的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">"AymaxLi"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    name: <span class="string">"PolluxLee"</span>,</span><br><span class="line">    play: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">" is playing music."</span>);</span><br><span class="line">        <span class="comment">// (function()&#123;</span></span><br><span class="line">        <span class="comment">//     console.log(that.name + " is coding.");</span></span><br><span class="line">        <span class="comment">// &#125;)()</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//调用play()函数的是person对象，this指向person</span></span><br><span class="line"><span class="comment">//此时this.name === "PolluxLee"</span></span><br><span class="line">person.play(); <span class="comment">//PolluxLee is playing music.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//调用play()函数的是window对象，this指向window</span></span><br><span class="line"><span class="comment">//此时this.name === "AymaxLi"</span></span><br><span class="line"><span class="keyword">var</span> ay = person.play;</span><br><span class="line">ay(); <span class="comment">//AymaxLi is playing music.</span></span><br></pre></td></tr></table></figure>
+<p>输出 <code>...is coding.</code> 的函数，调用这个函数的对象是 play() 函数对象，所以此时的 this 并不指向 <code>person</code> 对象，要在调用”..coding”这个函数之前先获取 this ，<code>that = this</code>，才能够拿到 person 的 name 属性。</p>
+<h2 id="new-绑定"><a href="#new-绑定" class="headerlink" title="new 绑定"></a>new 绑定</h2><p>用 new 关键字调用构造函数可以创建一个新的对象（object），this 就指向这个新的对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将this绑定到一个对象上</span></span><br><span class="line"><span class="keyword">var</span> Acring = <span class="keyword">new</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">"Acring"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Acring is playing music.</span></span><br><span class="line"><span class="built_in">console</span>.log(Acring.name + <span class="string">" is playing music."</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="apply-、call-和-bind-方法"><a href="#apply-、call-和-bind-方法" class="headerlink" title="apply()、call() 和 bind() 方法"></a>apply()、call() 和 bind() 方法</h2><p>一个函数在其正文中使用 this 关键字，它的值可以调用 apply，call 和 bind  方法绑定到调用中的一个特定对象，所有这些函数都是继承自Function.prototype的所有函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">"PolluxLee"</span>;</span><br><span class="line"><span class="keyword">var</span> a = &#123;   </span><br><span class="line">    name : <span class="string">"AymaxLi"</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">arg</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + arg);</span><br><span class="line">&#125;</span><br><span class="line">foo.apply(a, [<span class="string">" is coding."</span>]);</span><br><span class="line">foo.call(a, <span class="string">" is coding."</span>);</span><br><span class="line"><span class="keyword">var</span> foo1 = foo.bind(a, <span class="string">" is coding."</span>);</span><br><span class="line">foo1();</span><br></pre></td></tr></table></figure>
+<p>apply 和 call 的功能相同，但是传递参数的方式不同，它们第一个参数都是指定调用的对象，apply 的第二个参数是数组，call 的第二个参数是不定参数，即可传递多个。</p>
+<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><p>箭头函数看上去是匿名函数的一种简写，但实际上，箭头函数和匿名函数有个明显的区别：箭头函数内部的this是词法作用域，由上下文确定。即，<strong>箭头函数声明时，this 是它所在的作用域的 this</strong>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    birth: <span class="number">1996</span>,</span><br><span class="line">    getAge: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> b = <span class="keyword">this</span>.birth; <span class="comment">// 1996</span></span><br><span class="line">        <span class="keyword">var</span> fn = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">new</span> <span class="built_in">Date</span>().getFullYear() - <span class="keyword">this</span>.birth; <span class="comment">// this指向obj对象</span></span><br><span class="line">        <span class="keyword">return</span> fn();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">obj.getAge(); <span class="comment">// 21</span></span><br></pre></td></tr></table></figure>
+  </section>
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="http://onvgd1z3p.bkt.clouddn.com/pollux.jpg" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> polluxlee </p>
+      <p class="subtitle"> 若你喜欢怪人，其实我很美 </p>
+    <div>
+  </section>
+
+  
+</div>
+
+
+  
+</main>
+
+</body>
+</html>
