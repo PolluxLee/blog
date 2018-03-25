@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-19T13:36:44.971Z</updated>
+  <updated>2018-03-25T14:00:18.761Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>防抖动（Debouncing）和节流阀（Throttling）</title>
+    <link href="http://yoursite.com/2018/03/25/Debounce-and-Trottling/"/>
+    <id>http://yoursite.com/2018/03/25/Debounce-and-Trottling/</id>
+    <published>2018-03-24T16:00:00.000Z</published>
+    <updated>2018-03-25T14:00:18.761Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;防抖动和节流阀就是在&lt;code&gt;事件触发&lt;/code&gt;和&lt;code&gt;回调函数&lt;/code&gt;之间加一层控制，使得像 &lt;code&gt;scroll&lt;/code&gt; 和 &lt;code&gt;resize&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>实用 object-fit</title>
     <link href="http://yoursite.com/2018/03/18/CSS-object-fit/"/>
     <id>http://yoursite.com/2018/03/18/CSS-object-fit/</id>
     <published>2018-03-17T16:00:00.000Z</published>
-    <updated>2018-03-19T13:36:44.971Z</updated>
+    <updated>2018-03-19T15:03:13.739Z</updated>
     
     <summary type="html">
     
@@ -106,28 +129,6 @@
   </entry>
   
   <entry>
-    <title>Angular2 自定义双向绑定</title>
-    <link href="http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/"/>
-    <id>http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/</id>
-    <published>2018-01-25T16:00:00.000Z</published>
-    <updated>2018-01-26T03:58:57.062Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值&lt;br&gt;&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>和弦初探</title>
     <link href="http://yoursite.com/2018/01/26/Chord/"/>
     <id>http://yoursite.com/2018/01/26/Chord/</id>
@@ -163,6 +164,28 @@
         
         
           &lt;h2 id=&quot;Git-仓库组成&quot;&gt;&lt;a href=&quot;#Git-仓库组成&quot; class=&quot;headerlink&quot; title=&quot;Git 仓库组成&quot;&gt;&lt;/a&gt;Git 仓库组成&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Angular2 自定义双向绑定</title>
+    <link href="http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/"/>
+    <id>http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/</id>
+    <published>2018-01-25T16:00:00.000Z</published>
+    <updated>2018-01-26T03:58:57.062Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值&lt;br&gt;&lt;figure class=&quot;highlight
         
       
     
