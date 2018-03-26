@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-25T14:00:18.761Z</updated>
+  <updated>2018-03-26T14:00:50.682Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS 选择器</title>
+    <link href="http://yoursite.com/2018/03/26/CSS-Selector/"/>
+    <id>http://yoursite.com/2018/03/26/CSS-Selector/</id>
+    <published>2018-03-25T16:00:00.000Z</published>
+    <updated>2018-03-26T14:00:50.682Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基本选择器&quot;&gt;&lt;a href=&quot;#基本选择器&quot; class=&quot;headerlink&quot; title=&quot;基本选择器&quot;&gt;&lt;/a&gt;基本选择器&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>防抖动（Debouncing）和节流阀（Throttling）</title>
@@ -129,28 +154,6 @@
   </entry>
   
   <entry>
-    <title>和弦初探</title>
-    <link href="http://yoursite.com/2018/01/26/Chord/"/>
-    <id>http://yoursite.com/2018/01/26/Chord/</id>
-    <published>2018-01-25T16:00:00.000Z</published>
-    <updated>2018-01-26T03:50:24.538Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;&lt;code&gt;下面均以根音 C 的和弦为例&lt;/code&gt;&lt;br&gt;如果还没弄清楚音程的概念，请看我之前的文章 ===&amp;gt;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>代码回滚：Reset、Checkout、Revert</title>
     <link href="http://yoursite.com/2018/01/26/Code-Rollback/"/>
     <id>http://yoursite.com/2018/01/26/Code-Rollback/</id>
@@ -186,6 +189,28 @@
         
         
           &lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值&lt;br&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>和弦初探</title>
+    <link href="http://yoursite.com/2018/01/26/Chord/"/>
+    <id>http://yoursite.com/2018/01/26/Chord/</id>
+    <published>2018-01-25T16:00:00.000Z</published>
+    <updated>2018-01-26T03:50:24.538Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;&lt;code&gt;下面均以根音 C 的和弦为例&lt;/code&gt;&lt;br&gt;如果还没弄清楚音程的概念，请看我之前的文章 ===&amp;gt;
         
       
     

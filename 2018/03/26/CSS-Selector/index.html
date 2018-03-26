@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS 选择器 | polluxlee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-96493222-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2018/03/26/CSS-Selector/">CSS 选择器</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">March 26 2018</p>
+  </section>
+
+  <section class="article-entry">
+    <h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">选择器</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">匹配所有元素</td>
+</tr>
+<tr>
+<td style="text-align:center">Tag</td>
+<td style="text-align:center">匹配所有标签为 Tag 的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">.className</td>
+<td style="text-align:center">匹配所有包含 className 的类名的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">#idName</td>
+<td style="text-align:center">匹配 id 为 idName 的元素</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"info"</span> <span class="attr">id</span>=<span class="string">"name"</span>&gt;</span>纸纸纸盆<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"info"</span>&gt;</span>你好<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.info</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="built_in">rgba</span>(0, 0, 0, 0.125);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#name</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#00695C</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/2351420-e78d38c84c7b56dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="组合选择器"><a href="#组合选择器" class="headerlink" title="组合选择器"></a>组合选择器</h2><p><strong>注：E 和 F 可以是标签，类名也可以是 ID</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选择器</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">E,F</td>
+<td style="text-align:center">逗号隔开表示或的关系，匹配所有E 或 F 的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E F</td>
+<td style="text-align:center">空格分隔，匹配 E 的所有后代包含 F 的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E&gt;F</td>
+<td style="text-align:center">大于号分隔，匹配 E 的所有包含 F 的直接子元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E+F</td>
+<td style="text-align:center">匹配 E 后面紧挨着的一个同级元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E~F</td>
+<td style="text-align:center">匹配 E 后面所有同级元素</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>.ancestor .children<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ancestor"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"children"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"children"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"children content"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>.parent &gt; .child<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"parent"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>.element + .adj<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"element content"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"adj content"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"adj content"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"adj content"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">.content &#123;</span><br><span class="line">  height: 30px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.children,.child &#123;</span><br><span class="line">  margin: 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.ancestor,.parent, .element &#123;</span><br><span class="line">  border: 1px solid green;</span><br><span class="line">  width: 500px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.ancestor .children, .parent &gt; .child, .element + .adj &#123;</span><br><span class="line">  border: 1px solid red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.element + .adj &#123;</span><br><span class="line">  margin-top: 20px;</span><br><span class="line">  width: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/2351420-ec469ca33c56cb33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p><strong>注：下面的 E 元素都可省略</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选择器</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">E[attr]</td>
+<td style="text-align:center">匹配所有具有属性 attr 的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E[attr=val]</td>
+<td style="text-align:center">匹配所有具有属性 attr=value 的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E[attr~=val]</td>
+<td style="text-align:center">匹配所有att属性具有多个空格分隔的值、其中一个值等于”val”的E元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E[attr \= val]</td>
+<td style="text-align:center">匹配所有att属性具有多个连字号分隔（hyphen-separated）的值、其中一个值以”val”开头的E元素，主要用于lang属性，比如”en”、”en-us”、”en-gb”等等</td>
+</tr>
+<tr>
+<td style="text-align:center">E[attr^=”val”]</td>
+<td style="text-align:center">匹配所有属性 attr 值以 val 开头的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E[attr$=”val”]</td>
+<td style="text-align:center">匹配所有属性 attr 值以 val结尾的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E[attr*=”val”]</td>
+<td style="text-align:center">匹配所有属性 attr 值含有 val 的 E 元素</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"body"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">title</span>&gt;</span>哈哈哈哈哈嗝<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">title</span>=<span class="string">"hello"</span>&gt;</span>哈哈哈哈哈嗝<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">lang</span>=<span class="string">"en-us"</span>&gt;</span>哈哈哈哈哈嗝<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[title] &#123;</span><br><span class="line">  border: 1px solid rgba(0, 0, 0, 0.125);</span><br><span class="line">  border-radius: 3px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[title=hello] &#123;</span><br><span class="line">  color: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">[lang|=en] &#123;</span><br><span class="line">  color: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/2351420-f6ed590f4873726a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">选择器</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">E:first-child</td>
+<td style="text-align:center">匹配父元素的第一个子元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:link</td>
+<td style="text-align:center">匹配所有未被点击的链接</td>
+</tr>
+<tr>
+<td style="text-align:center">E:visited</td>
+<td style="text-align:center">匹配所有已被点击的链接</td>
+</tr>
+<tr>
+<td style="text-align:center">E:active</td>
+<td style="text-align:center">匹配所有已被鼠标按下但未释放的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:hover</td>
+<td style="text-align:center">匹配所有鼠标悬停其上的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:focus</td>
+<td style="text-align:center">匹配所有获得焦点的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:lang(c)</td>
+<td style="text-align:center">匹配 lang 属性等于 c 的 E 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:enabled</td>
+<td style="text-align:center">匹配表单中激活的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:disabled</td>
+<td style="text-align:center">匹配表单中禁用的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:checked</td>
+<td style="text-align:center">匹配表单中被选中的radio（单选框）或checkbox（复选框）元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E::selection</td>
+<td style="text-align:center">匹配用户当前选中的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:root</td>
+<td style="text-align:center">匹配文档的根元素，对于HTML文档，就是HTML元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:nth-child(n)</td>
+<td style="text-align:center">匹配其父元素的第n个子元素，第一个编号为1</td>
+</tr>
+<tr>
+<td style="text-align:center">E:nth-last-child(n)</td>
+<td style="text-align:center">匹配其父元素的倒数第n个子元素，第一个编号为1</td>
+</tr>
+<tr>
+<td style="text-align:center">E:nth-of-type(n)</td>
+<td style="text-align:center">与:nth-child()作用类似，但是仅匹配使用同种标签的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:nth-last-of-type(n)</td>
+<td style="text-align:center">与:nth-last-child() 作用类似，但是仅匹配使用同种标签的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:last-child</td>
+<td style="text-align:center">匹配父元素的最后一个子元素，等同于:nth-last-child(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">E:first-of-type</td>
+<td style="text-align:center">匹配父元素下使用同种标签的第一个子元素，等同于:nth-of-type(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">E:last-of-type</td>
+<td style="text-align:center">匹配父元素下使用同种标签的最后一个子元素，等同于:nth-last-of-type(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">E:only-child</td>
+<td style="text-align:center">匹配父元素下仅有的一个子元素，等同于:first-child:last-child或 :nth-child(1):nth-last-child(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">E:only-of-type</td>
+<td style="text-align:center">匹配父元素下使用同种标签的唯一一个子元素，等同于:first-of-type:last-of-type或 :nth-of-type(1):nth-last-of-type(1)</td>
+</tr>
+<tr>
+<td style="text-align:center">E:empty</td>
+<td style="text-align:center">匹配一个不包含任何子元素的元素，注意，文本节点也被看作子元素</td>
+</tr>
+<tr>
+<td style="text-align:center">E:target</td>
+<td style="text-align:center">匹配文档中特定”id”点击后的效果</td>
+</tr>
+<tr>
+<td style="text-align:center">E:not(s)</td>
+<td style="text-align:center">匹配不符合当前选择器的任何元素</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>.parent :first-child (匹配父元素的第一个子元素)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"parent"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>I 'm the first child of ".parent"<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>I 'm the second child of ".parent"<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>I 'm the third child of ".parent"<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>a :link (匹配所有未被点击的链接)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>a :hover (匹配鼠标悬停其上的链接)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>a :active (匹配鼠标已经其上按下、还没有释放的链接)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>a :visited (匹配鼠标悬停其上的链接)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0)"</span>&gt;</span>主页<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0)"</span>&gt;</span>归档<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:void(0)"</span> <span class="attr">title</span>=<span class="string">"about"</span>&gt;</span>关于<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>input :focus (匹配获得焦点的元素)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>p:not(s) (匹配 p 中除了 s 以外的元素)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"hello"</span>&gt;</span>Some text.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"classy"</span>&gt;</span>One more text<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"classy hello"</span>&gt;</span>Some other text.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> <span class="selector-pseudo">:first-child</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#00796B</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid yellow;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.hello</span><span class="selector-pseudo">:not(.classy)</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.classy</span><span class="selector-pseudo">:not(.hello)</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/2351420-4f458ffb8db85ae2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">选择器</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">E:before</td>
+<td style="text-align:center">在E元素之前插入生成的内容</td>
+</tr>
+<tr>
+<td style="text-align:center">E:after</td>
+<td style="text-align:center">在E元素之前插入生成的内容</td>
+</tr>
+<tr>
+<td style="text-align:center">E:first-letter</td>
+<td style="text-align:center">匹配E元素的第一个字母</td>
+</tr>
+<tr>
+<td style="text-align:center">E:first-line</td>
+<td style="text-align:center">匹配E元素的第一行</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">q</span>&gt;</span>一些引用<span class="tag">&lt;/<span class="name">q</span>&gt;</span>, 他说, <span class="tag">&lt;<span class="name">q</span>&gt;</span>比没有好。<span class="tag">&lt;/<span class="name">q</span>&gt;</span>.</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span><br><span class="line">sed do eiusmod tempor incididunt ut labore.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">q</span><span class="selector-pseudo">::before</span> &#123; </span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"«"</span>;</span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">q</span><span class="selector-pseudo">::after</span> &#123; </span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"»"</span>;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">::first-line</span> &#123; <span class="attribute">text-transform</span>: uppercase &#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">::first-letter</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red; </span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">130%</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/2351420-0b385648570486b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="完整-Demo"><a href="#完整-Demo" class="headerlink" title="完整 Demo"></a>完整 Demo</h2><p><a href="https://stackblitz.com/edit/css-selector" target="_blank" rel="noopener">在 stackblitz 中打开</a></p>
+<iframe src="https://stackblitz.com/edit/css-selector?embed=1&file=app/basic/basic.component.css" style="width: 100%;height: 500px;"></iframe>
+  </section>
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="http://onvgd1z3p.bkt.clouddn.com/pollux.jpg" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> polluxlee </p>
+      <p class="subtitle"> 若你喜欢怪人，其实我很美 </p>
+    <div>
+  </section>
+
+  
+</div>
+
+
+  
+</main>
+
+</body>
+</html>
