@@ -95,7 +95,7 @@
     <link href="http://yoursite.com/2018/03/07/The-Prototype-Chain/"/>
     <id>http://yoursite.com/2018/03/07/The-Prototype-Chain/</id>
     <published>2018-03-06T16:00:00.000Z</published>
-    <updated>2018-03-07T06:38:48.281Z</updated>
+    <updated>2018-04-02T10:32:13.907Z</updated>
     
     <summary type="html">
     
@@ -103,8 +103,7 @@
       
         
         
-          &lt;h2&gt;[[Prototype]] 属性&lt;/h2&gt;
-&lt;p&gt;JavaScript 对象都有一个私有属性 &lt;code&gt;[[Prototype]]&lt;/code&gt;，它指向它的原型对象 &lt;code&gt;prototype&lt;/code&gt;，这个 &lt;code&gt;prototype&lt;/code&gt;
+          &lt;h2 id=&quot;Prototype-属性&quot;&gt;&lt;a href=&quot;#Prototype-属性&quot; class=&quot;headerlink&quot; title=&quot;[[Prototype]] 属性&quot;&gt;&lt;/a&gt;[[Prototype]] 属性&lt;/h2&gt;&lt;p&gt;JavaScript 对象都有一个私有属性
         
       
     
