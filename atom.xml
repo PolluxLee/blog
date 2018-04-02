@@ -29,9 +29,11 @@
       
         
         
-          &lt;h2 id=&quot;基本选择器&quot;&gt;&lt;a href=&quot;#基本选择器&quot; class=&quot;headerlink&quot; title=&quot;基本选择器&quot;&gt;&lt;/a&gt;基本选择器&lt;/h2&gt;&lt;table&gt;
+          &lt;h2&gt;基本选择器&lt;/h2&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;选择器&lt;/th&gt;
 &lt;th
         
       
@@ -77,8 +79,9 @@
       
         
         
-          &lt;h2 id=&quot;Definition&quot;&gt;&lt;a href=&quot;#Definition&quot; class=&quot;headerlink&quot; title=&quot;Definition&quot;&gt;&lt;/a&gt;Definition&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;The
+          &lt;h2&gt;Definition&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;object-fit&lt;/code&gt;&lt;/strong&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS&quot;
         
       
     
@@ -100,7 +103,8 @@
       
         
         
-          &lt;h2 id=&quot;Prototype-属性&quot;&gt;&lt;a href=&quot;#Prototype-属性&quot; class=&quot;headerlink&quot; title=&quot;[[Prototype]] 属性&quot;&gt;&lt;/a&gt;[[Prototype]] 属性&lt;/h2&gt;&lt;p&gt;JavaScript 对象都有一个私有属性
+          &lt;h2&gt;[[Prototype]] 属性&lt;/h2&gt;
+&lt;p&gt;JavaScript 对象都有一个私有属性 &lt;code&gt;[[Prototype]]&lt;/code&gt;，它指向它的原型对象 &lt;code&gt;prototype&lt;/code&gt;，这个 &lt;code&gt;prototype&lt;/code&gt;
         
       
     
@@ -122,7 +126,9 @@
       
         
         
-          &lt;h2 id=&quot;动态性&quot;&gt;&lt;a href=&quot;#动态性&quot; class=&quot;headerlink&quot; title=&quot;动态性&quot;&gt;&lt;/a&gt;动态性&lt;/h2&gt;&lt;p&gt;JavaScript
+          &lt;h2&gt;动态性&lt;/h2&gt;
+&lt;p&gt;JavaScript 是一种弱类型或动态语言，变量不需要先声明类型，程序在运行时确定变量的类型。所以，一个变量可保存不同类型的数据&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;highlight
         
       
     
@@ -144,51 +150,8 @@
       
         
         
-          &lt;h2 id=&quot;IE-盒模型与-W3C-盒模型&quot;&gt;&lt;a href=&quot;#IE-盒模型与-W3C-盒模型&quot; class=&quot;headerlink&quot; title=&quot;IE 盒模型与 W3C 盒模型&quot;&gt;&lt;/a&gt;IE 盒模型与 W3C 盒模型&lt;/h2&gt;&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>代码回滚：Reset、Checkout、Revert</title>
-    <link href="http://yoursite.com/2018/01/26/Code-Rollback/"/>
-    <id>http://yoursite.com/2018/01/26/Code-Rollback/</id>
-    <published>2018-01-25T16:00:00.000Z</published>
-    <updated>2018-01-26T12:25:59.683Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Git-仓库组成&quot;&gt;&lt;a href=&quot;#Git-仓库组成&quot; class=&quot;headerlink&quot; title=&quot;Git 仓库组成&quot;&gt;&lt;/a&gt;Git 仓库组成&lt;/h2&gt;&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Angular2 自定义双向绑定</title>
-    <link href="http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/"/>
-    <id>http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/</id>
-    <published>2018-01-25T16:00:00.000Z</published>
-    <updated>2018-01-26T03:58:57.062Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h2&gt;&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值&lt;br&gt;&lt;figure class=&quot;highlight
+          &lt;h2&gt;IE 盒模型与 W3C 盒模型&lt;/h2&gt;
+&lt;p&gt;&lt;img
         
       
     
@@ -210,7 +173,56 @@
       
         
         
-          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;&lt;code&gt;下面均以根音 C 的和弦为例&lt;/code&gt;&lt;br&gt;如果还没弄清楚音程的概念，请看我之前的文章 ===&amp;gt;
+          &lt;p&gt;## 写在前面&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;下面均以根音 C 的和弦为例&lt;/code&gt;
+如果还没弄清楚音程的概念，请看我之前的文章 ===&amp;gt; &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>代码回滚：Reset、Checkout、Revert</title>
+    <link href="http://yoursite.com/2018/01/26/Code-Rollback/"/>
+    <id>http://yoursite.com/2018/01/26/Code-Rollback/</id>
+    <published>2018-01-25T16:00:00.000Z</published>
+    <updated>2018-01-26T12:25:59.683Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2&gt;Git 仓库组成&lt;/h2&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Angular2 自定义双向绑定</title>
+    <link href="http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/"/>
+    <id>http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/</id>
+    <published>2018-01-25T16:00:00.000Z</published>
+    <updated>2018-01-26T03:58:57.062Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2&gt;需求&lt;/h2&gt;
+&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
         
       
     
@@ -232,7 +244,8 @@
       
         
         
-          &lt;h2 id=&quot;父组件向子组件传入数据-–-Input&quot;&gt;&lt;a href=&quot;#父组件向子组件传入数据-–-Input&quot; class=&quot;headerlink&quot; title=&quot;父组件向子组件传入数据 – @Input&quot;&gt;&lt;/a&gt;父组件向子组件传入数据 –
+          &lt;h2&gt;父组件向子组件传入数据 – @Input&lt;/h2&gt;
+&lt;p&gt;一个组件的标签在另一个组件的内部，即包含这个标签的组件就是它的父组件，子组件的属性通过加上 &lt;code&gt;@Input()&lt;/code&gt;
         
       
     
@@ -254,7 +267,8 @@
       
         
         
-          &lt;h2 id=&quot;函数调用&quot;&gt;&lt;a href=&quot;#函数调用&quot; class=&quot;headerlink&quot; title=&quot;函数调用&quot;&gt;&lt;/a&gt;函数调用&lt;/h2&gt;&lt;p&gt;&lt;code&gt;this&lt;/code&gt; 是 Javascript
+          &lt;h2&gt;函数调用&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;this&lt;/code&gt; 是 Javascript 语言的一个关键字。它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。随着函数使用场合的不同，this 的值会发生变化。但是有一个总的原则，那就是 this
         
       
     
@@ -276,7 +290,9 @@
       
         
         
-          &lt;h2 id=&quot;视频教程&quot;&gt;&lt;a href=&quot;#视频教程&quot; class=&quot;headerlink&quot; title=&quot;视频教程&quot;&gt;&lt;/a&gt;视频教程&lt;/h2&gt;&lt;p&gt;利用全半关系计算自然大小调的音阶：&lt;br&gt;&lt;a
+          &lt;h2&gt;视频教程&lt;/h2&gt;
+&lt;p&gt;利用全半关系计算自然大小调的音阶：
+&lt;a href=&quot;https://www.youtube.com/watch?v=KDHRzH-j9no&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【10分鐘理解】咩係大調同小調?
         
       
     
@@ -298,7 +314,8 @@
       
         
         
-          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;
+          &lt;h2&gt;写在前面&lt;/h2&gt;
+&lt;p&gt;没有错，这一部分要说的就是&lt;code&gt;音程&lt;/code&gt;。平时学习音乐在网上会听到有人说什么小三度啊，五度循环圈？？？&lt;img
         
       
     
@@ -320,7 +337,8 @@
       
         
         
-          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;
+          &lt;h2&gt;写在前面&lt;/h2&gt;
+&lt;p&gt;在学习&lt;code&gt;六线谱（TAB）&lt;/code&gt;之前，先学习&lt;code&gt;五线谱&lt;/code&gt;,五线谱是几乎所有乐器最通用的记谱方式，掌握了五线谱，六线谱自然就会看了。在这一部分里面，我们将学习音符的表示，音符的时值及之间的关系和五线谱是如何记谱的
         
       
     
@@ -342,7 +360,14 @@
       
         
         
-          &lt;h2 id=&quot;吉他种类&quot;&gt;&lt;a href=&quot;#吉他种类&quot; class=&quot;headerlink&quot;
+          &lt;h2&gt;吉他种类&lt;/h2&gt;
+&lt;p&gt;吉他可粗略分为两大类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一类是木吉他，即，以木制共鸣箱扩音的木吉他。木吉他常被用于古典音乐、民间音乐及流行音乐的演奏或伴奏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二类是电吉他，即，以扩大机扩音的电吉他，多用于摇
         
       
     
@@ -364,7 +389,9 @@
       
         
         
-          &lt;h2 id=&quot;Golang-在-Windows-环境下使用-Protobuf&quot;&gt;&lt;a href=&quot;#Golang-在-Windows-环境下使用-Protobuf&quot; class=&quot;headerlink&quot; title=&quot;Golang 在 Windows 环境下使用
+          &lt;h2&gt;Golang 在 Windows 环境下使用 Protobuf&lt;/h2&gt;
+&lt;h3&gt;安装 protoc&lt;/h3&gt;
+&lt;p&gt;下载 protoc-3.1.0-win32.zip 或者其他版本的 win32： &lt;a
         
       
     
@@ -386,7 +413,7 @@
       
         
         
-          &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+          &lt;p&gt;&amp;lt;iframe frameborder=&amp;quot;no&amp;quot; border=&amp;quot;0&amp;quot; marginwidth=&amp;quot;0&amp;quot; marginheight=&amp;quot;0&amp;quot; width=330 height=86
         
       
     

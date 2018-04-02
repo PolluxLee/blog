@@ -49,24 +49,31 @@
   </section>
 
   <section class="article-entry">
-    <h2 id="IE-盒模型与-W3C-盒模型"><a href="#IE-盒模型与-W3C-盒模型" class="headerlink" title="IE 盒模型与 W3C 盒模型"></a>IE 盒模型与 W3C 盒模型</h2><p><img src="http://upload-images.jianshu.io/upload_images/2351420-02982e119016ddd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="盒子模型"></p>
+    <h2>IE 盒模型与 W3C 盒模型</h2>
+<p><img src="http://upload-images.jianshu.io/upload_images/2351420-02982e119016ddd9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="盒子模型"></p>
 <ul>
 <li>W3C 盒模型，即，<code>content-box</code> 的宽度从 Content Edge 开始算起，也就是当有 padding 跟 border 的时候，实际宽度会扩大</li>
 <li>IE 盒模型，即，<code>border-box</code> 的宽度从 Padding Edge 开始算起，也就是 <code>width = content-width + padding-left + padding-right + border-left + border-right</code>，当有 padding 跟 border 的时候，实际宽度并不会扩大</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: border-box || content-box || inherit</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: border-box || content-box || inherit</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>content-box：页面将采用 W3C 盒模型来解析计算，<strong>默认值</strong></li>
 <li>border-box：页面将采用 IE 盒模型解析计算</li>
 <li>inherit：页面将从父元素继承 box-sizing 的值</li>
 </ul>
-<h2 id="border-box"><a href="#border-box" class="headerlink" title="border-box"></a>border-box</h2><p><img src="http://cdn.css-tricks.com/wp-content/uploads/2014/02/step-4.svg" alt=""></p>
+<h2>border-box</h2>
+<p><img src="http://cdn.css-tricks.com/wp-content/uploads/2014/02/step-4.svg" alt=""></p>
 <blockquote>
 <p>You might think of it this way: with box-sizing: border-box the padding and border press their way inside the box rather than expand the box. The result is a box the exact width you set it to be and can count on.</p>
 </blockquote>
-<p>为了计算和方便（<strong>不管设置怎样的 border 和 padding，盒子的实际宽度都不变</strong>），一些专家建议使用 <code>border-box</code><br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">*, *<span class="selector-pseudo">:before</span>, *<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">  <span class="comment">/* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */</span></span><br><span class="line">  <span class="attribute">-webkit-box-sizing</span>: border-box; </span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Firefox (desktop or Android) 28- */</span></span><br><span class="line">  <span class="attribute">-moz-box-sizing</span>: border-box;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */</span></span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p><a href="http://119.23.16.67/box/" target="_blank" rel="noopener">box</a></p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="noopener">盒子模型 MDN</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener">块格式化上下文 MDN</a><br><a href="https://css-tricks.com/international-box-sizing-awareness-day/" target="_blank" rel="noopener">css-tricks.com</a></p>
+<p>为了计算和方便（<strong>不管设置怎样的 border 和 padding，盒子的实际宽度都不变</strong>），一些专家建议使用 <code>border-box</code>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">*, *<span class="selector-pseudo">:before</span>, *<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">  <span class="comment">/* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */</span></span><br><span class="line">  <span class="attribute">-webkit-box-sizing</span>: border-box; </span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Firefox (desktop or Android) 28- */</span></span><br><span class="line">  <span class="attribute">-moz-box-sizing</span>: border-box;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */</span></span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2>Demo</h2>
+<p><a href="http://119.23.16.67/box/" target="_blank" rel="noopener">box</a></p>
+<h2>参考</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="noopener">盒子模型 MDN</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context" target="_blank" rel="noopener">块格式化上下文 MDN</a>
+<a href="https://css-tricks.com/international-box-sizing-awareness-day/" target="_blank" rel="noopener">css-tricks.com</a></p>
 
   </section>
 </article>

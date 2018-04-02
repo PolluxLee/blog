@@ -49,13 +49,15 @@
   </section>
 
   <section class="article-entry">
-    <h2 id="Git-仓库组成"><a href="#Git-仓库组成" class="headerlink" title="Git 仓库组成"></a>Git 仓库组成</h2><p><img src="http://upload-images.jianshu.io/upload_images/2351420-ebf844562b749fca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+    <h2>Git 仓库组成</h2>
+<p><img src="http://upload-images.jianshu.io/upload_images/2351420-ebf844562b749fca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <ul>
 <li>工作区：我们编写代码的地方</li>
 <li>暂存区：执行 <code>add</code> 命令后将代码加入到 <strong>暂存区</strong></li>
 <li>提交历史：执行 <code>commit</code> 命令后将暂存区的修改提交到 <strong>提交历史</strong></li>
 </ul>
-<h2 id="reset、checkout、revert-的主要区别"><a href="#reset、checkout、revert-的主要区别" class="headerlink" title="reset、checkout、revert 的主要区别"></a>reset、checkout、revert 的主要区别</h2><blockquote>
+<h2>reset、checkout、revert 的主要区别</h2>
+<blockquote>
 <p>reset 和 checkout 可对<strong>文件层面</strong>的更改操作，也可对<strong>提交层面</strong>的更改操作，而 revert 只能够对对<strong>提交层面</strong>的更改操作</p>
 </blockquote>
 <table>
@@ -84,34 +86,43 @@
 </tr>
 </tbody>
 </table>
-<h2 id="文件层面"><a href="#文件层面" class="headerlink" title="文件层面"></a>文件层面</h2><h3 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将缓存区同步到你指定的那个提交</span></span><br><span class="line">git reset [HEAD~2] foo.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 最后加一点，撤销缓存区的所有更改</span></span><br><span class="line">git reset .</span><br></pre></td></tr></table></figure>
-<h3 id="git-checkout"><a href="#git-checkout" class="headerlink" title="git checkout"></a>git checkout</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将工作区同步到你指定的那个提交</span></span><br><span class="line">git checkout[HEAD~2] foo.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 最后加一点，撤销工作区的所有更改</span></span><br><span class="line">git checkout .</span><br></pre></td></tr></table></figure>
-<h2 id="提交层面"><a href="#提交层面" class="headerlink" title="提交层面"></a>提交层面</h2><h3 id="git-reset-1"><a href="#git-reset-1" class="headerlink" title="git reset"></a>git reset</h3><p>可通过传入几个标记来修改工作区或缓存区</p>
+<h2>文件层面</h2>
+<h3>git reset</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将缓存区同步到你指定的那个提交</span></span><br><span class="line">git reset [HEAD~2] foo.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 最后加一点，撤销缓存区的所有更改</span></span><br><span class="line">git reset .</span><br></pre></td></tr></table></figure></p>
+<h3>git checkout</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将工作区同步到你指定的那个提交</span></span><br><span class="line">git checkout[HEAD~2] foo.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 最后加一点，撤销工作区的所有更改</span></span><br><span class="line">git checkout .</span><br></pre></td></tr></table></figure></p>
+<h2>提交层面</h2>
+<h3>git reset</h3>
+<p>可通过传入几个标记来修改工作区或缓存区</p>
 <ul>
-<li>–soft – 缓存区和工作目录都不会被改变</li>
-<li>–mixed – 默认选项。缓存区和你指定的提交同步，但工作目录不受影响</li>
-<li>–hard – 缓存区和工作目录都同步到你指定的提交</li>
+<li>--soft – 缓存区和工作目录都不会被改变</li>
+<li>--mixed – 默认选项。缓存区和你指定的提交同步，但工作目录不受影响</li>
+<li>--hard – 缓存区和工作目录都同步到你指定的提交</li>
 </ul>
-<h3 id="git-checkout-1"><a href="#git-checkout-1" class="headerlink" title="git checkout"></a>git checkout</h3><p>和 <code>git reset</code> 不一样的是，<code>git checkout</code> 没有移动这些分支</p>
+<h3>git checkout</h3>
+<p>和 <code>git reset</code> 不一样的是，<code>git checkout</code> 没有移动这些分支</p>
 <ul>
 <li>切换到其他分支，本质上是将 HEAD 指针指向新的分支</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将 HEAD 指针指向 hotfix 分支</span></span><br><span class="line">git checkout hotfix</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将 HEAD 指针指向 hotfix 分支</span></span><br><span class="line">git checkout hotfix</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>查看旧版本</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将 HEAD 移动到前两个版本的提交</span></span><br><span class="line">git checkout HEAD~2</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将 HEAD 移动到前两个版本的提交</span></span><br><span class="line">git checkout HEAD~2</span><br></pre></td></tr></table></figure></p>
 <p><strong>但要特别注意 HEAD 分离，这是非常危险的</strong></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2351420-684d8d98079ef520.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>比如，当前提交版本为 <code>2c55a13</code> ，此时如果执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout HEAD~1</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout HEAD~1</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2351420-476d157534f6b035.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>那么 HEAD 指针指向了 <code>b5fb8c4</code> ，而 master 指针还是指向最新的提交，HEAD 指针此时不指向 master，就出现了 HEAD 分离，如果此时在 HEAD 指向的结点提交了更改，那么 master 指针所指向的提交就无法被找到了，所做的工作都白费了。所以，此种情况提交更改必须要创建新的分支</p>
 <p>解决办法参考：<a href="https://www.jianshu.com/p/91a0f8feb45d" target="_blank" rel="noopener">危险！分离头指针</a></p>
-<h3 id="git-revert"><a href="#git-revert" class="headerlink" title="git revert"></a>git revert</h3><p><code>git revert</code> 不会重写提交历史，而是提交一个新的版本（这个版本的状态是 <strong>指定的版本撤销了提交</strong> 的状态）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git revert HEAD~2</span><br></pre></td></tr></table></figure>
-<h2 id="最常用"><a href="#最常用" class="headerlink" title="最常用"></a>最常用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 撤销工作区的所有更改</span></span><br><span class="line">git checkout .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销缓存区的所有更改</span></span><br><span class="line">git reset .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对提交层面的版本回退</span></span><br><span class="line">git revert [HEAD~x]</span><br></pre></td></tr></table></figure>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9" target="_blank" rel="noopener">geeeeeeeeek/git-recipes</a></p>
+<h3>git revert</h3>
+<p><code>git revert</code> 不会重写提交历史，而是提交一个新的版本（这个版本的状态是 <strong>指定的版本撤销了提交</strong> 的状态）</p>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git revert HEAD~2</span><br></pre></td></tr></table></figure></p>
+<h2>最常用</h2>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 撤销工作区的所有更改</span></span><br><span class="line">git checkout .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销缓存区的所有更改</span></span><br><span class="line">git reset .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对提交层面的版本回退</span></span><br><span class="line">git revert [HEAD~x]</span><br></pre></td></tr></table></figure></p>
+<h2>参考</h2>
+<p><a href="https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9" target="_blank" rel="noopener">geeeeeeeeek/git-recipes</a></p>
 
   </section>
 </article>
