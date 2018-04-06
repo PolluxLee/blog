@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-26T14:00:50.682Z</updated>
+  <updated>2018-04-06T04:29:43.127Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/03/26/CSS-Selector/"/>
     <id>http://yoursite.com/2018/03/26/CSS-Selector/</id>
     <published>2018-03-25T16:00:00.000Z</published>
-    <updated>2018-03-26T14:00:50.682Z</updated>
+    <updated>2018-04-06T04:29:43.127Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,9 @@
       
         
         
-          &lt;h2&gt;基本选择器&lt;/h2&gt;
-&lt;table&gt;
+          &lt;h2 id=&quot;基本选择器&quot;&gt;&lt;a href=&quot;#基本选择器&quot; class=&quot;headerlink&quot; title=&quot;基本选择器&quot;&gt;&lt;/a&gt;基本选择器&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;选择器&lt;/th&gt;
 &lt;th
         
       
