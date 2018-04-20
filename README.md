@@ -23,9 +23,9 @@
 
 - [Angular Custom Two-way Data Binding](https://github.com/PolluxLee/blog/issues/2)
 
-## WeApp
+## Project
 
-- [meme Q&A](https://github.com/PolluxLee/blog/issues/20)
+- [Project Q&A](https://github.com/PolluxLee/blog/issues/20)
 
 ## Git
 
