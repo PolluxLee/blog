@@ -25,7 +25,7 @@
 
 ## Project
 
-- [Project Q&A](https://github.com/PolluxLee/blog/issues/20)
+- [Project Q&A](https://github.com/PolluxLee/blog/issues/18)
 
 ## Git
 
