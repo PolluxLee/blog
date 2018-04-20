@@ -32,6 +32,6 @@
 - [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
 - [Git Command](https://github.com/PolluxLee/blog/issues/8)
 
-## Interview Preparation
+## FE Basics
 
 - [Interview Preparation](https://github.com/PolluxLee/blog/issues/19)
