@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-06T04:29:43.127Z</updated>
+  <updated>2018-03-25T14:00:18.761Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>CSS 选择器</title>
-    <link href="http://yoursite.com/2018/03/26/CSS-Selector/"/>
-    <id>http://yoursite.com/2018/03/26/CSS-Selector/</id>
-    <published>2018-03-25T16:00:00.000Z</published>
-    <updated>2018-04-06T04:29:43.127Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;基本选择器&quot;&gt;&lt;a href=&quot;#基本选择器&quot; class=&quot;headerlink&quot; title=&quot;基本选择器&quot;&gt;&lt;/a&gt;基本选择器&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>防抖动（Debouncing）和节流阀（Throttling）</title>
@@ -111,58 +86,11 @@
   </entry>
   
   <entry>
-    <title>JavaScript 数据类型和数据结构</title>
-    <link href="http://yoursite.com/2018/03/07/JavaScript-Data-Types/"/>
-    <id>http://yoursite.com/2018/03/07/JavaScript-Data-Types/</id>
-    <published>2018-03-06T16:00:00.000Z</published>
-    <updated>2018-03-07T01:48:34.471Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;动态性&lt;/h2&gt;
-&lt;p&gt;JavaScript 是一种弱类型或动态语言，变量不需要先声明类型，程序在运行时确定变量的类型。所以，一个变量可保存不同类型的数据&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>CSS Box Model</title>
-    <link href="http://yoursite.com/2018/03/01/CSS-Box-Model/"/>
-    <id>http://yoursite.com/2018/03/01/CSS-Box-Model/</id>
-    <published>2018-02-28T16:00:00.000Z</published>
-    <updated>2018-03-01T10:31:08.546Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;IE 盒模型与 W3C 盒模型&lt;/h2&gt;
-&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>和弦初探</title>
-    <link href="http://yoursite.com/2018/01/26/Chord/"/>
-    <id>http://yoursite.com/2018/01/26/Chord/</id>
+    <title>Angular2 自定义双向绑定</title>
+    <link href="http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/"/>
+    <id>http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/</id>
     <published>2018-01-25T16:00:00.000Z</published>
-    <updated>2018-01-26T03:50:24.538Z</updated>
+    <updated>2018-04-03T02:14:56.096Z</updated>
     
     <summary type="html">
     
@@ -170,9 +98,9 @@
       
         
         
-          &lt;p&gt;## 写在前面&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;下面均以根音 C 的和弦为例&lt;/code&gt;
-如果还没弄清楚音程的概念，请看我之前的文章 ===&amp;gt; &lt;a
+          &lt;h2&gt;需求&lt;/h2&gt;
+&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
         
       
     
@@ -205,53 +133,6 @@
   </entry>
   
   <entry>
-    <title>Angular2 自定义双向绑定</title>
-    <link href="http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/"/>
-    <id>http://yoursite.com/2018/01/26/Angular2-Custom-Two-Way-Binding/</id>
-    <published>2018-01-25T16:00:00.000Z</published>
-    <updated>2018-04-03T02:14:56.096Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;需求&lt;/h2&gt;
-&lt;p&gt;我们在使用表单是时候常常会用到 [(ngModel)] 去绑定我们的内容值
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Angular2 父子组件的通信</title>
-    <link href="http://yoursite.com/2017/08/18/Angular2-Input-Output/"/>
-    <id>http://yoursite.com/2017/08/18/Angular2-Input-Output/</id>
-    <published>2017-08-17T16:00:00.000Z</published>
-    <updated>2017-08-18T12:25:33.249Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;父组件向子组件传入数据 – @Input&lt;/h2&gt;
-&lt;p&gt;一个组件的标签在另一个组件的内部，即包含这个标签的组件就是它的父组件，子组件的属性通过加上 &lt;code&gt;@Input()&lt;/code&gt;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>JavaScript 的 this 的用法</title>
     <link href="http://yoursite.com/2017/08/05/JavaScript-this/"/>
     <id>http://yoursite.com/2017/08/05/JavaScript-this/</id>
@@ -266,151 +147,6 @@
         
           &lt;h2&gt;函数调用&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;this&lt;/code&gt; 是 Javascript 语言的一个关键字。它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。随着函数使用场合的不同，this 的值会发生变化。但是有一个总的原则，那就是 this
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>五度圈与大小调</title>
-    <link href="http://yoursite.com/2017/08/02/Five-Degree-Cycle/"/>
-    <id>http://yoursite.com/2017/08/02/Five-Degree-Cycle/</id>
-    <published>2017-08-01T16:00:00.000Z</published>
-    <updated>2017-08-02T05:53:58.666Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;视频教程&lt;/h2&gt;
-&lt;p&gt;利用全半关系计算自然大小调的音阶：
-&lt;a href=&quot;https://www.youtube.com/watch?v=KDHRzH-j9no&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【10分鐘理解】咩係大調同小調?
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>音程</title>
-    <link href="http://yoursite.com/2017/07/14/Pitch-Interval/"/>
-    <id>http://yoursite.com/2017/07/14/Pitch-Interval/</id>
-    <published>2017-07-13T16:00:00.000Z</published>
-    <updated>2017-07-17T02:32:45.073Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;写在前面&lt;/h2&gt;
-&lt;p&gt;没有错，这一部分要说的就是&lt;code&gt;音程&lt;/code&gt;。平时学习音乐在网上会听到有人说什么小三度啊，五度循环圈？？？&lt;img
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>音符与乐谱</title>
-    <link href="http://yoursite.com/2017/07/12/Learn-Staff/"/>
-    <id>http://yoursite.com/2017/07/12/Learn-Staff/</id>
-    <published>2017-07-11T16:00:00.000Z</published>
-    <updated>2017-07-14T16:15:29.369Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;写在前面&lt;/h2&gt;
-&lt;p&gt;在学习&lt;code&gt;六线谱（TAB）&lt;/code&gt;之前，先学习&lt;code&gt;五线谱&lt;/code&gt;,五线谱是几乎所有乐器最通用的记谱方式，掌握了五线谱，六线谱自然就会看了。在这一部分里面，我们将学习音符的表示，音符的时值及之间的关系和五线谱是如何记谱的
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>选择一支吉他</title>
-    <link href="http://yoursite.com/2017/07/09/Choose-Guitar/"/>
-    <id>http://yoursite.com/2017/07/09/Choose-Guitar/</id>
-    <published>2017-07-08T16:00:00.000Z</published>
-    <updated>2017-07-09T11:53:43.133Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;吉他种类&lt;/h2&gt;
-&lt;p&gt;吉他可粗略分为两大类：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;第一类是木吉他，即，以木制共鸣箱扩音的木吉他。木吉他常被用于古典音乐、民间音乐及流行音乐的演奏或伴奏&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;第二类是电吉他，即，以扩大机扩音的电吉他，多用于摇
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Protobuf 配置</title>
-    <link href="http://yoursite.com/2017/04/25/Protobuf/"/>
-    <id>http://yoursite.com/2017/04/25/Protobuf/</id>
-    <published>2017-04-24T16:00:00.000Z</published>
-    <updated>2017-05-02T05:38:50.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2&gt;Golang 在 Windows 环境下使用 Protobuf&lt;/h2&gt;
-&lt;h3&gt;安装 protoc&lt;/h3&gt;
-&lt;p&gt;下载 protoc-3.1.0-win32.zip 或者其他版本的 win32： &lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>浅谈十二平均律与吉他调式音阶</title>
-    <link href="http://yoursite.com/2017/04/06/Tone-Scale/"/>
-    <id>http://yoursite.com/2017/04/06/Tone-Scale/</id>
-    <published>2017-04-05T16:00:00.000Z</published>
-    <updated>2017-07-09T11:43:58.041Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&amp;lt;iframe frameborder=&amp;quot;no&amp;quot; border=&amp;quot;0&amp;quot; marginwidth=&amp;quot;0&amp;quot; marginheight=&amp;quot;0&amp;quot; width=330 height=86
         
       
     
