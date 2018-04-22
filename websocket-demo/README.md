@@ -1,12 +1,14 @@
 ## Usage
 
-- **Make sure u use Chrome**
+
+- **npm install**
 
 ```bash
 $ cd server
+$ npm install
 $ node index.js
 ```
 
-- **And then, access**
+- **Make sure u use Chrome, and then, access**
 
-`http://localhost:1221/`
+`http://localhost:1221`
