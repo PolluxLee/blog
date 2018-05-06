@@ -1,0 +1,152 @@
+body {
+  background: #ECEFF1;
+}
+
+.wrapper {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 30px;
+}
+
+.lexical__code, .lexical__result, .lexical__rule {
+  height: 100%;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 2px;
+  margin: 10px;
+  padding: 16px;
+  overflow: auto;
+}
+
+.lexical__title {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 6px;
+}
+
+.lexical__title p {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lexical__input {
+  width: 99%;
+  height: 380px;
+  resize: none;
+  white-space: nowrap;
+  border-radius: 2px;
+  border-color: #E0E0E0;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.lexical__btngroup {
+  width: 100%;
+  height: 36px;
+  text-align: right;
+}
+
+.lexical__btn {
+  outline: none;
+  display: inline-block;
+  width: 30%;
+  color: white;
+  border: 0px;
+  border-radius: 2px;
+  margin: 6px auto;
+  padding: 0;
+  font-size: 14px;
+  height: 100%;
+  cursor: pointer;
+  vertical-align: center;
+}
+
+.lexical__table {
+  width: 100%;
+  height: 380px;
+  overflow: auto;
+}
+
+.lexical__table::-webkit-scrollbar { display:none; }
+
+.lexical__table table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  border: 1px dashed #eaeaea;
+  color: #757575;
+}
+
+table tr th { border-bottom: 1px solid #009688; }
+table tr td { border-top: 1px dashed #eaeaea; }
+
+.lexical__title--table {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.lexical__title--p {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  color: #757575;
+}
+
+.lexical__btn--analyze { background: #009688; }
+.lexical__btn--analyze:active { background: #077267; }
+.lexical__btn--default { background: #607D8B; }
+.lexical__btn--default:active { background: rgb(70, 93, 104); }
+.lexical__btn--clear { background: #F44336; }
+.lexical__btn--clear:active { background: rgb(184, 26, 15); }
+
+.lexical__display {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 430px;
+  overflow: auto;
+}
+
+.lexical__display::-webkit-scrollbar { display:none; }
+
+.lexical__item {
+  background: #fafafa; 
+  border-radius: 2px;
+  height: 30px;
+  margin-right: 14px;
+  margin-top: 14px;
+}
+
+.lexical__item--id, .lexical__item--value, .lexical__item--remark {
+  height: 30px;
+  min-width: 30px;
+  box-sizing: border-box;
+  padding: 2px 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.lexical__item--id, .lexical__item--value {
+  border-right: 1px dashed #eaeaea;
+}
+
+.lexical__item--id p, .lexical__item--value p, .lexical__item--remark p{
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  color: #757575;
+}

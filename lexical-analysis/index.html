@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./lexical.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div class="lexical__code" style="width: 30%">
+      <div class="lexical__title"><p>代码</p></div>
+      <textarea class="lexical__input" id="input" placeholder="在此输入代码..."></textarea>
+      <div class="lexical__btngroup">
+        <button class="lexical__btn lexical__btn--clear" id="clear">清除</button>
+        <button class="lexical__btn lexical__btn--default" id="default">默认代码</button>
+        <button class="lexical__btn lexical__btn--analyze" id="analyze">词法分析</button>
+      </div>
+    </div>
+    <div class="lexical__rule" style="width: 30%">
+      <div class="lexical__title"><p>符号集</p></div>
+      <div class="lexical__table">
+        <!-- table will be appended here -->
+      </div>
+    </div>
+    <div class="lexical__result" style="width: 40%">
+      <div class="lexical__title"><p>结果</p></div>
+      <div class="lexical__display">
+        <!-- results will be printed here -->
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./const.js"></script>
+  <script type="text/javascript" src="./lexical.js"></script>
+</body>
+</html>
