@@ -73,7 +73,7 @@ body {
 
 .lexical__table {
   width: 100%;
-  height: 380px;
+  height: 430px;
   overflow: auto;
 }
 
@@ -116,6 +116,7 @@ table tr td { border-top: 1px dashed #eaeaea; }
 
 .lexical__display {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   max-height: 430px;
   overflow: auto;
