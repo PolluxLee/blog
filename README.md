@@ -3,6 +3,7 @@
 
 - [Promise](https://github.com/PolluxLee/blog/issues/24)
 - [Event Loop](https://github.com/PolluxLee/blog/issues/25)
+- [Code Fragment](https://github.com/PolluxLee/blog/issues/27)
 - [JavaScript Data Types and Data Structures](https://github.com/PolluxLee/blog/issues/12)
 - [JavaScript This](https://github.com/PolluxLee/blog/issues/7)
 - [Debouncing and Throttling](https://github.com/PolluxLee/blog/issues/4)
