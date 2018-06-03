@@ -33,8 +33,9 @@
 ## FE Basics
 
 - [基础知识](https://github.com/PolluxLee/blog/issues/32)
-- [Number 数值转换](https://github.com/PolluxLee/blog/issues/34)
+- [类型转换相关知识](https://github.com/PolluxLee/blog/issues/34)
 - [ES6 解构赋值](https://github.com/PolluxLee/blog/issues/33)
+- [面向对象 OO](https://github.com/PolluxLee/blog/issues/35)
 - [项目疑点](https://github.com/PolluxLee/blog/issues/18)
 - [项目总结](https://github.com/PolluxLee/blog/issues/31)
 - [排序算法](https://github.com/PolluxLee/blog/issues/30)
