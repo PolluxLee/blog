@@ -4,7 +4,6 @@
 - [Promise](https://github.com/PolluxLee/blog/issues/24)
 - [Event Loop](https://github.com/PolluxLee/blog/issues/25)
 - [Code Fragment](https://github.com/PolluxLee/blog/issues/27)
-- [JavaScript Data Types and Data Structures](https://github.com/PolluxLee/blog/issues/12)
 - [JavaScript This](https://github.com/PolluxLee/blog/issues/7)
 - [Debouncing and Throttling](https://github.com/PolluxLee/blog/issues/4)
 - [JavaScript Prototype Chain](https://github.com/PolluxLee/blog/issues/3)
@@ -26,10 +25,6 @@
 
 - [Angular Custom Two-way Data Binding](https://github.com/PolluxLee/blog/issues/2)
 
-## Project
-
-- [Project Q&A](https://github.com/PolluxLee/blog/issues/18)
-
 ## Git
 
 - [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
@@ -37,4 +32,9 @@
 
 ## FE Basics
 
-- [Interview Preparation](https://github.com/PolluxLee/blog/issues/19)
+- [基础知识](https://github.com/PolluxLee/blog/issues/32)
+- [Number 数值转换](https://github.com/PolluxLee/blog/issues/34)
+- [ES6 解构赋值](https://github.com/PolluxLee/blog/issues/33)
+- [项目疑点](https://github.com/PolluxLee/blog/issues/18)
+- [项目总结](https://github.com/PolluxLee/blog/issues/31)
+- [排序算法](https://github.com/PolluxLee/blog/issues/30)
