@@ -11,17 +11,17 @@
 
 ## JavaScript Notes
 - [JavaScript 基础知识](https://github.com/PolluxLee/blog/issues/32)
+- [JavaScript Promise](https://github.com/PolluxLee/blog/issues/24)
+- [Event Loop](https://github.com/PolluxLee/blog/issues/25)
+- [JavaScript This](https://github.com/PolluxLee/blog/issues/7)
+- [JavaScript String API](https://github.com/PolluxLee/blog/issues/21)
+- [JavaScript Array API](https://github.com/PolluxLee/blog/issues/22)
 - [你不知道的类型转换](https://github.com/PolluxLee/blog/issues/34)
 - [你不知道的类型转换 II](https://github.com/PolluxLee/blog/issues/57)
 - [JavaScript 变量提升与函数提升](https://github.com/PolluxLee/blog/issues/41)
 - [JavaScript 作用域与闭包](https://github.com/PolluxLee/blog/issues/40)
 - [JavaScript 面向对象](https://github.com/PolluxLee/blog/issues/35)
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
-- [Promise](https://github.com/PolluxLee/blog/issues/24)
-- [Event Loop](https://github.com/PolluxLee/blog/issues/25)
-- [JavaScript This](https://github.com/PolluxLee/blog/issues/7)
-- [JavaScript String API](https://github.com/PolluxLee/blog/issues/21)
-- [JavaScript Array API](https://github.com/PolluxLee/blog/issues/22)
 
 ## CSS Notes
 - [Centering in CSS](https://github.com/PolluxLee/blog/issues/1)
