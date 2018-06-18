@@ -8,6 +8,8 @@
 - [Code Fragment](https://github.com/PolluxLee/blog/issues/27)
 - [防抖（Debounce）和节流（Throttle）](https://github.com/PolluxLee/blog/issues/4)
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
+- [数组去重](https://github.com/PolluxLee/blog/issues/45)
+- [数组乱序](https://github.com/PolluxLee/blog/issues/44)
 
 ## JavaScript Notes
 - [JavaScript 基础知识](https://github.com/PolluxLee/blog/issues/32)
@@ -38,8 +40,6 @@
 
 ## Algorithm Notes
 - [排序算法](https://github.com/PolluxLee/blog/issues/30)
-- [数组去重](https://github.com/PolluxLee/blog/issues/45)
-- [数组乱序](https://github.com/PolluxLee/blog/issues/44)
 
 ## Network Notes
 - [HTTP 状态码](https://github.com/PolluxLee/blog/issues/39)
