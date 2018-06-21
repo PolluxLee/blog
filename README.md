@@ -24,6 +24,7 @@
 - [JavaScript 作用域与闭包](https://github.com/PolluxLee/blog/issues/40)
 - [JavaScript 面向对象](https://github.com/PolluxLee/blog/issues/35)
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
+- [ES6 Export & Import](https://github.com/PolluxLee/blog/issues/28)
 
 ## CSS Notes
 - [Centering in CSS](https://github.com/PolluxLee/blog/issues/1)
