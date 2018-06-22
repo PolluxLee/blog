@@ -10,6 +10,7 @@
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
 - [数组去重](https://github.com/PolluxLee/blog/issues/45)
 - [数组乱序](https://github.com/PolluxLee/blog/issues/44)
+- [JavaScript 深浅拷贝](https://github.com/PolluxLee/blog/issues/53)
 
 ## JavaScript Notes
 - [JavaScript 基础知识](https://github.com/PolluxLee/blog/issues/32)
@@ -26,6 +27,19 @@
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
 - [ES6 Export & Import](https://github.com/PolluxLee/blog/issues/28)
 
+## Network Notes
+- [HTTP 状态码](https://github.com/PolluxLee/blog/issues/39)
+- [cookie，sessionStorage 和 localStorage](https://github.com/PolluxLee/blog/issues/36)
+- [CORS 跨域资源共享](https://github.com/PolluxLee/blog/issues/38)
+- [XMLHttpRequest](https://github.com/PolluxLee/blog/issues/37)
+- [从输入URL到页面加载发生了什么？](https://github.com/PolluxLee/blog/issues/48)
+- [TCP 首部](https://github.com/PolluxLee/blog/issues/62)
+- [TCP 的运输连接管理](https://github.com/PolluxLee/blog/issues/61)
+- [用户数据报协议 UDP](https://github.com/PolluxLee/blog/issues/60)
+
+## Algorithm Notes
+- [排序算法](https://github.com/PolluxLee/blog/issues/30)
+
 ## CSS Notes
 - [Centering in CSS](https://github.com/PolluxLee/blog/issues/1)
 - [float 实现常用布局](https://github.com/PolluxLee/blog/issues/47)
@@ -38,19 +52,6 @@
 - [Sass Basics](https://github.com/PolluxLee/blog/issues/13)
 - [Sass Nesting](https://github.com/PolluxLee/blog/issues/15)
 - [CSS loading](https://github.com/PolluxLee/blog/issues/14)
-
-## Algorithm Notes
-- [排序算法](https://github.com/PolluxLee/blog/issues/30)
-
-## Network Notes
-- [HTTP 状态码](https://github.com/PolluxLee/blog/issues/39)
-- [cookie，sessionStorage 和 localStorage](https://github.com/PolluxLee/blog/issues/36)
-- [CORS 跨域资源共享](https://github.com/PolluxLee/blog/issues/38)
-- [XMLHttpRequest](https://github.com/PolluxLee/blog/issues/37)
-- [从输入URL到页面加载发生了什么？](https://github.com/PolluxLee/blog/issues/48)
-- [TCP 首部](https://github.com/PolluxLee/blog/issues/62)
-- [TCP 的运输连接管理](https://github.com/PolluxLee/blog/issues/61)
-- [用户数据报协议 UDP](https://github.com/PolluxLee/blog/issues/60)
 
 ## Git Notes
 - [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
