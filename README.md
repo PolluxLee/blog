@@ -41,6 +41,8 @@
 - [排序算法](https://github.com/PolluxLee/blog/issues/30)
 
 ## CSS Notes
+- [CSS 布局方法概览](https://github.com/PolluxLee/blog/issues/67)
+- [CSS float 浮动](https://github.com/PolluxLee/blog/issues/68)
 - [Centering in CSS](https://github.com/PolluxLee/blog/issues/1)
 - [float 实现常用布局](https://github.com/PolluxLee/blog/issues/47)
 - [CSS Box Model 盒子模型](https://github.com/PolluxLee/blog/issues/20)
@@ -52,6 +54,8 @@
 - [Sass Basics](https://github.com/PolluxLee/blog/issues/13)
 - [Sass Nesting](https://github.com/PolluxLee/blog/issues/15)
 - [CSS loading](https://github.com/PolluxLee/blog/issues/14)
+- [Less Variables 变量](https://github.com/PolluxLee/blog/issues/65)
+- [Less Mixins 混入](https://github.com/PolluxLee/blog/issues/66)
 
 ## Git Notes
 - [Git Flow 工作流](https://github.com/PolluxLee/blog/issues/64)
