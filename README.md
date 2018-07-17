@@ -41,6 +41,7 @@
 - [排序算法](https://github.com/PolluxLee/blog/issues/30)
 
 ## CSS Notes
+- [Flexbox 弹性布局](https://github.com/PolluxLee/blog/issues/71)
 - [Collapsing margins 外边距折叠](https://github.com/PolluxLee/blog/issues/70)
 - [CSS 视觉格式化模型](https://github.com/PolluxLee/blog/issues/69)
 - [CSS float 浮动](https://github.com/PolluxLee/blog/issues/68)
@@ -49,7 +50,6 @@
 - [CSS Box Model 盒子模型](https://github.com/PolluxLee/blog/issues/20)
 - [The Shapes of CSS](https://github.com/PolluxLee/blog/issues/16)
 - [CSS grid](https://github.com/PolluxLee/blog/issues/11)
-- [CSS Flex](https://github.com/PolluxLee/blog/issues/10)
 - [CSS object-fit](https://github.com/PolluxLee/blog/issues/6)
 - [CSS 选择器](https://github.com/PolluxLee/blog/issues/5)
 - [Sass Basics](https://github.com/PolluxLee/blog/issues/13)
