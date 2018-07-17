@@ -41,7 +41,8 @@
 - [排序算法](https://github.com/PolluxLee/blog/issues/30)
 
 ## CSS Notes
-- [CSS 布局方法概览](https://github.com/PolluxLee/blog/issues/67)
+- [Collapsing margins 外边距折叠](https://github.com/PolluxLee/blog/issues/70)
+- [CSS 视觉格式化模型](https://github.com/PolluxLee/blog/issues/69)
 - [CSS float 浮动](https://github.com/PolluxLee/blog/issues/68)
 - [Centering in CSS](https://github.com/PolluxLee/blog/issues/1)
 - [float 实现常用布局](https://github.com/PolluxLee/blog/issues/47)
