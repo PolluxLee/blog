@@ -1,4 +1,5 @@
 ## JavaScript Notes
+- [浏览器回流、重绘](https://github.com/PolluxLee/blog/issues/75)
 - [JS 正则 Ninja 笔记](https://github.com/PolluxLee/blog/issues/72)
 - [JavaScript Promise](https://github.com/PolluxLee/blog/issues/24)
 - [Event Loop](https://github.com/PolluxLee/blog/issues/25)
