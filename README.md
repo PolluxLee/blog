@@ -34,6 +34,7 @@
 - [排序算法](https://github.com/PolluxLee/blog/issues/30)
 
 ## CSS Notes
+- [CSS 三栏布局](https://github.com/PolluxLee/blog/issues/74)
 - [CSS Box Model 盒子模型](https://github.com/PolluxLee/blog/issues/73)
 - [Flexbox 弹性布局](https://github.com/PolluxLee/blog/issues/71)
 - [Collapsing margins 外边距折叠](https://github.com/PolluxLee/blog/issues/70)
