@@ -1,8 +1,8 @@
 ## JavaScript Notes
+- [Event Loop 事件循环](https://github.com/PolluxLee/blog/issues/25)
 - [浏览器回流、重绘](https://github.com/PolluxLee/blog/issues/75)
 - [JS 正则 Ninja 笔记](https://github.com/PolluxLee/blog/issues/72)
 - [JavaScript Promise](https://github.com/PolluxLee/blog/issues/24)
-- [Event Loop](https://github.com/PolluxLee/blog/issues/25)
 - [JavaScript This](https://github.com/PolluxLee/blog/issues/7)
 - [JavaScript 变量提升与函数提升](https://github.com/PolluxLee/blog/issues/41)
 - [JavaScript 作用域与闭包](https://github.com/PolluxLee/blog/issues/40)
