@@ -16,7 +16,6 @@
 - [Polyfill of 「new」](https://github.com/PolluxLee/blog/issues/50)
 
 ## Tricks
-- [JavaScript 代码片段](https://github.com/PolluxLee/blog/issues/27)
 - [防抖（Debounce）和节流（Throttle）](https://github.com/PolluxLee/blog/issues/4)
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
 - [JavaScript 数组去重](https://github.com/PolluxLee/blog/issues/45)
@@ -35,7 +34,6 @@
 - [排序算法](https://github.com/PolluxLee/blog/issues/30)
 
 ## CSS Notes
-- [CSS 性能优化](https://github.com/PolluxLee/blog/issues/76)
 - [CSS 三栏布局](https://github.com/PolluxLee/blog/issues/74)
 - [CSS Box Model 盒子模型](https://github.com/PolluxLee/blog/issues/73)
 - [Flexbox 弹性布局](https://github.com/PolluxLee/blog/issues/71)
@@ -43,15 +41,11 @@
 - [CSS 视觉格式化模型](https://github.com/PolluxLee/blog/issues/69)
 - [CSS float 浮动](https://github.com/PolluxLee/blog/issues/68)
 - [Centering in CSS 居中的几种方法](https://github.com/PolluxLee/blog/issues/1)
-- [CSS grid](https://github.com/PolluxLee/blog/issues/11)
 - [CSS object-fit](https://github.com/PolluxLee/blog/issues/6)
 - [CSS 选择器](https://github.com/PolluxLee/blog/issues/5)
+- [CSS 性能优化](https://github.com/PolluxLee/blog/issues/76)
 
 ## Git Notes
 - [Git Flow 工作流](https://github.com/PolluxLee/blog/issues/64)
 - [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
 - [Git Command](https://github.com/PolluxLee/blog/issues/8)
-
-## Angular
-- [Angular 生命周期钩子](https://github.com/PolluxLee/blog/issues/46)
-- [Angular Custom Two-way Data Binding](https://github.com/PolluxLee/blog/issues/2)
