@@ -1,4 +1,5 @@
 ## JavaScript Notes
+- [JavaScript 面向对象](https://github.com/PolluxLee/blog/issues/35)
 - [Event Loop 事件循环](https://github.com/PolluxLee/blog/issues/25)
 - [浏览器回流、重绘](https://github.com/PolluxLee/blog/issues/75)
 - [JS 正则 Ninja 笔记](https://github.com/PolluxLee/blog/issues/72)
@@ -6,7 +7,6 @@
 - [JavaScript This](https://github.com/PolluxLee/blog/issues/7)
 - [JavaScript 变量提升与函数提升](https://github.com/PolluxLee/blog/issues/41)
 - [JavaScript 作用域与闭包](https://github.com/PolluxLee/blog/issues/40)
-- [JavaScript 面向对象](https://github.com/PolluxLee/blog/issues/35)
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
 
 ## Simulation
@@ -16,6 +16,7 @@
 - [Simulation of 「new」](https://github.com/PolluxLee/blog/issues/50)
 
 ## Tricks
+- [前端埋点方案](https://github.com/PolluxLee/blog/issues/77)
 - [防抖（Debounce）和节流（Throttle）](https://github.com/PolluxLee/blog/issues/4)
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
 - [JavaScript 数组去重](https://github.com/PolluxLee/blog/issues/45)
