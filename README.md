@@ -9,11 +9,11 @@
 - [JavaScript 面向对象](https://github.com/PolluxLee/blog/issues/35)
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
 
-## Polyfill
-- [Polyfill of「filter」](https://github.com/PolluxLee/blog/issues/56)
-- [Polyfill of 「bind」](https://github.com/PolluxLee/blog/issues/52)
-- [Polyfill of 「call」and「apply」](https://github.com/PolluxLee/blog/issues/51)
-- [Polyfill of 「new」](https://github.com/PolluxLee/blog/issues/50)
+## Simulation
+- [Simulation of「filter」](https://github.com/PolluxLee/blog/issues/56)
+- [Simulation of 「bind」](https://github.com/PolluxLee/blog/issues/52)
+- [Simulation of 「call」and「apply」](https://github.com/PolluxLee/blog/issues/51)
+- [Simulation of 「new」](https://github.com/PolluxLee/blog/issues/50)
 
 ## Tricks
 - [防抖（Debounce）和节流（Throttle）](https://github.com/PolluxLee/blog/issues/4)
