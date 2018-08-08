@@ -17,7 +17,6 @@
 
 ## Tricks
 - [JavaScript 深浅拷贝](https://github.com/PolluxLee/blog/issues/53)
-- [HTTP 前世今生](https://github.com/PolluxLee/blog/issues/80)
 - [前端埋点方案](https://github.com/PolluxLee/blog/issues/77)
 - [防抖（Debounce）和节流（Throttle）](https://github.com/PolluxLee/blog/issues/4)
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
@@ -26,6 +25,7 @@
 
 ## Network Notes
 - [HTTP 状态码](https://github.com/PolluxLee/blog/issues/39)
+- [HTTP 前世今生](https://github.com/PolluxLee/blog/issues/80)
 - [cookie，sessionStorage 和 localStorage](https://github.com/PolluxLee/blog/issues/36)
 - [CORS 跨域资源共享](https://github.com/PolluxLee/blog/issues/38)
 - [XMLHttpRequest](https://github.com/PolluxLee/blog/issues/37)
