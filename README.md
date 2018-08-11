@@ -8,6 +8,8 @@
 - [JavaScript 变量提升与函数提升](https://github.com/PolluxLee/blog/issues/41)
 - [JavaScript 作用域与闭包](https://github.com/PolluxLee/blog/issues/40)
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
+- [ES6 新特性](https://github.com/PolluxLee/blog/issues/79)
+- [JavaScript 数组方法](https://github.com/PolluxLee/blog/issues/81)
 
 ## Simulation
 - [Simulation of「filter」](https://github.com/PolluxLee/blog/issues/56)
