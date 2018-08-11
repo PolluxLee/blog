@@ -1,4 +1,5 @@
 ## JavaScript Notes
+- [JavaScript 链式调用](https://github.com/PolluxLee/blog/issues/82)
 - [JavaScript 面向对象](https://github.com/PolluxLee/blog/issues/35)
 - [Event Loop 事件循环](https://github.com/PolluxLee/blog/issues/25)
 - [浏览器回流、重绘](https://github.com/PolluxLee/blog/issues/75)
