@@ -29,9 +29,9 @@
 ## Network Notes
 - [HTTP 状态码](https://github.com/PolluxLee/blog/issues/39)
 - [HTTP 前世今生](https://github.com/PolluxLee/blog/issues/80)
+- [HTTP 缓存](https://github.com/PolluxLee/blog/issues/83)
 - [cookie，sessionStorage 和 localStorage](https://github.com/PolluxLee/blog/issues/36)
 - [CORS 跨域资源共享](https://github.com/PolluxLee/blog/issues/38)
-- [XMLHttpRequest](https://github.com/PolluxLee/blog/issues/37)
 - [TCP 首部](https://github.com/PolluxLee/blog/issues/62)
 - [TCP 的运输连接管理](https://github.com/PolluxLee/blog/issues/61)
 
