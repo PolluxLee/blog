@@ -4,13 +4,11 @@
 - [Event Loop 事件循环](https://github.com/PolluxLee/blog/issues/25)
 - [浏览器回流、重绘](https://github.com/PolluxLee/blog/issues/75)
 - [JS 正则 Ninja 笔记](https://github.com/PolluxLee/blog/issues/72)
-- [JavaScript Promise](https://github.com/PolluxLee/blog/issues/24)
-- [JavaScript 变量提升与函数提升](https://github.com/PolluxLee/blog/issues/41)
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
 
 ## Tricks
 - [JavaScript 深浅拷贝](https://github.com/PolluxLee/blog/issues/53)
-- [防抖（Debounce）和节流（Throttle）](https://github.com/PolluxLee/blog/issues/4)
+- [防抖和节流](https://github.com/PolluxLee/blog/issues/4)
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
 - [JavaScript 数组去重](https://github.com/PolluxLee/blog/issues/45)
 - [JavaScript 数组乱序](https://github.com/PolluxLee/blog/issues/44)
@@ -19,6 +17,9 @@
 - [Simulation of 「bind」](https://github.com/PolluxLee/blog/issues/52)
 - [Simulation of 「call」and「apply」](https://github.com/PolluxLee/blog/issues/51)
 - [Simulation of 「new」](https://github.com/PolluxLee/blog/issues/50)
+- [Git Flow 工作流](https://github.com/PolluxLee/blog/issues/64)
+- [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
+- [Git Command](https://github.com/PolluxLee/blog/issues/8)
 
 ## CSS Notes
 - [CSS 水平垂直居中](https://github.com/PolluxLee/blog/issues/1)
@@ -38,11 +39,6 @@
 - [CORS 跨域资源共享](https://github.com/PolluxLee/blog/issues/38)
 - [TCP 首部](https://github.com/PolluxLee/blog/issues/62)
 - [TCP 的运输连接管理](https://github.com/PolluxLee/blog/issues/61)
-
-## Git Notes
-- [Git Flow 工作流](https://github.com/PolluxLee/blog/issues/64)
-- [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
-- [Git Command](https://github.com/PolluxLee/blog/issues/8)
 
 ## Framework
 - [Angular 生命周期钩子](https://github.com/PolluxLee/blog/issues/46)
