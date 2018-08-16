@@ -10,16 +10,6 @@
 - [JavaScript 深浅拷贝](https://github.com/PolluxLee/blog/issues/53)
 - [防抖与节流](https://github.com/PolluxLee/blog/issues/4)
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
-- [JavaScript 数组去重](https://github.com/PolluxLee/blog/issues/45)
-- [JavaScript 数组乱序](https://github.com/PolluxLee/blog/issues/44)
-- [排序算法](https://github.com/PolluxLee/blog/issues/30)
-- [Simulation of「filter」](https://github.com/PolluxLee/blog/issues/56)
-- [Simulation of 「bind」](https://github.com/PolluxLee/blog/issues/52)
-- [Simulation of 「call」and「apply」](https://github.com/PolluxLee/blog/issues/51)
-- [Simulation of 「new」](https://github.com/PolluxLee/blog/issues/50)
-- [Git Flow 工作流](https://github.com/PolluxLee/blog/issues/64)
-- [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
-- [Git Command](https://github.com/PolluxLee/blog/issues/8)
 
 ## Styles Notes
 - [移动端布局总结](https://github.com/PolluxLee/blog/issues/86)
@@ -34,9 +24,7 @@
 
 ## Network Notes
 - [HTTP 状态码](https://github.com/PolluxLee/blog/issues/39)
-- [HTTP 前世今生](https://github.com/PolluxLee/blog/issues/80)
 - [HTTP 缓存](https://github.com/PolluxLee/blog/issues/83)
-- [cookie，sessionStorage 和 localStorage](https://github.com/PolluxLee/blog/issues/36)
 - [CORS 跨域资源共享](https://github.com/PolluxLee/blog/issues/38)
 - [TCP 首部](https://github.com/PolluxLee/blog/issues/62)
 - [TCP 的运输连接管理](https://github.com/PolluxLee/blog/issues/61)
