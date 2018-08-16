@@ -8,7 +8,7 @@
 
 ## Tricks
 - [JavaScript 深浅拷贝](https://github.com/PolluxLee/blog/issues/53)
-- [防抖和节流](https://github.com/PolluxLee/blog/issues/4)
+- [防抖与节流](https://github.com/PolluxLee/blog/issues/4)
 - [小程序预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
 - [JavaScript 数组去重](https://github.com/PolluxLee/blog/issues/45)
 - [JavaScript 数组乱序](https://github.com/PolluxLee/blog/issues/44)
@@ -21,7 +21,8 @@
 - [Git：Reset、Checkout、Revert](https://github.com/PolluxLee/blog/issues/9)
 - [Git Command](https://github.com/PolluxLee/blog/issues/8)
 
-## CSS Notes
+## Styles Notes
+- [移动端布局总结](https://github.com/PolluxLee/blog/issues/86)
 - [CSS 水平垂直居中](https://github.com/PolluxLee/blog/issues/1)
 - [CSS 三栏布局](https://github.com/PolluxLee/blog/issues/74)
 - [CSS Box Model 盒子模型](https://github.com/PolluxLee/blog/issues/73)
