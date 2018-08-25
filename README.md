@@ -31,6 +31,7 @@
 - [TCP 的运输连接管理](https://github.com/PolluxLee/blog/issues/61)
 
 ## Framework
+- [Vue 生命周期](https://github.com/PolluxLee/blog/issues/87)
 - [Angular 生命周期钩子](https://github.com/PolluxLee/blog/issues/46)
 - [Angular 自定义双向绑定](https://github.com/PolluxLee/blog/issues/2)
 
