@@ -5,6 +5,7 @@
 - [浏览器回流、重绘](https://github.com/PolluxLee/blog/issues/75)
 - [JS 正则 Ninja 笔记](https://github.com/PolluxLee/blog/issues/72)
 - [JavaScript 事件](https://github.com/PolluxLee/blog/issues/43)
+- [JavaScript 数组方法](https://github.com/PolluxLee/blog/issues/81)
 
 ## Tricks
 - [JavaScript 深浅拷贝](https://github.com/PolluxLee/blog/issues/53)
