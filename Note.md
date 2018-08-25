@@ -29,6 +29,7 @@
 - [JavaScript 链式调用](https://github.com/PolluxLee/blog/issues/82)
 - [前端埋点方案](https://github.com/PolluxLee/blog/issues/77)
 - [小程序图片预加载实用技巧](https://github.com/PolluxLee/blog/issues/54)
+- [项目总结](https://github.com/PolluxLee/blog/issues/31)
 
 
 ## Styles Notes
