@@ -25,7 +25,7 @@
 ## Network Notes
 - [HTTP 状态码](https://github.com/PolluxLee/blog/issues/39)
 - [HTTP 缓存](https://github.com/PolluxLee/blog/issues/83)
-- [CORS 跨域资源共享](https://github.com/PolluxLee/blog/issues/38)
+- [跨域数据通信](https://github.com/PolluxLee/blog/issues/38)
 - [TCP 首部](https://github.com/PolluxLee/blog/issues/62)
 - [TCP 的运输连接管理](https://github.com/PolluxLee/blog/issues/61)
 
