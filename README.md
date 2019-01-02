@@ -10,6 +10,7 @@
 
 ## Tricks
 
+- [LRU Cache](https://github.com/PolluxLee/blog/issues/94)
 - [JavaScript 深浅拷贝](https://github.com/PolluxLee/blog/issues/53)
 - [防抖与节流](https://github.com/PolluxLee/blog/issues/4)
 - [JavaScript 链式调用](https://github.com/PolluxLee/blog/issues/82)
